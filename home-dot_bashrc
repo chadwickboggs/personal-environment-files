@@ -1,0 +1,59 @@
+alias please='sudo'
+alias ls='ls --color=auto'
+alias lsc='ls --color'
+alias ll='ls -altrh --color=auto'
+alias llc='ls -altrh --color'
+alias cpv='cp -v'
+alias mvv='mv -v'
+alias acp='/opt/dev/advcpmv/bin/cp -g'
+alias amv='/opt/dev/advcpmv/bin/mv -g'
+
+alias treec='tree -C'
+alias morec='more -R'
+alias lessc='less -R'
+alias top='top -R -o cpu'
+alias sdiff='sdiff -w 100 -W --strip-trailing-cr'
+alias mtail='multitail'
+alias mtailm='multitail --mergeall'
+
+#alias gitss='git status -s'
+#alias gitcs='git log --pretty=format:'%H' -n 1'
+#alias gitcss='git log --pretty=format:'%h' -n 1'
+#alias gitco='git checkout'
+
+alias jh6='export JAVA_HOME="$(/usr/libexec/java_home --version 1.6)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh7='export JAVA_HOME="$(/usr/libexec/java_home --version 1.7)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh8='export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh9='export JAVA_HOME="$(/usr/libexec/java_home --version 1.9)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+
+alias vi='vim'
+alias gvi='mvim'
+alias gvim='mvim'
+alias gview='mview'
+
+#alias locate='/usr/bin/locate'
+
+#alias gprd='gradle --parallel --refresh-dependencies'
+#alias gwprd='./gradlew --parallel --refresh-dependencies'
+
+# PostgreSQL
+#alias pgstart="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl \-D /opt/local/var/db/postgresql93/defaultdb \-l /opt/local/var/log/postgresql93/postgres.log start'"
+#alias pgstop="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl \-D /opt/local/var/db/postgresql93/defaultdb stop \-m fast'"
+#alias pgstatus="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl status \-D /opt/local/var/db/postgresql93/defaultdb'"
+#alias pglog="tail -f /opt/local/var/log/postgresql93/postgres.log"
+
+alias sshfss='sshfs -C -o workaround=all -o reconnect'
+
+#export POSTGRES_HOME=/opt/local/lib/postgresql93
+#export PATH=/opt/local/bin:/opt/local/lib/postgresql93/bin:/opt/local/sbin:$PATH
+#export PATH="/opt/local/lib/postgresql93/bin:${PATH}"
+ 
+# Hadoop
+#export PATH=~/Documents/tools/oozie/bin:$PATH
+#export PATH=~/Documents/tools/pig/bin:$PATH
+#export PATH=~/Documents/tools/hadoop/bin:$PATH
+#failed maven build? just type in surefire-report and fancy html details will open in your browser
+#alias surefire-report='mvn surefire-report:report-only && open target/site/surefire-report.html'
+
+#alias fixow='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user; killall Finder; echo "Open With has been rebuilt.  Finder will relaunch."'
+

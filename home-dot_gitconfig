@@ -1,0 +1,28 @@
+[user]
+	email = chad_boggs@cable.comcast.com
+	name = Chad Boggs
+[core]
+	excludesfile = /Users/cboggs001c/.gitignore_global
+	pager = less -+$LESS -FR
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current
+[alias]
+	st = status
+	sts = status -s
+#	ci = commit
+	co = checkout
+#	df = diff
+#	lg = log -p
+	lga = log --all --objects --pretty=medium --graph --summary --name-status
+	pull = pull --rebase
+	check-whitespace = log --all --objects --pretty=medium --check

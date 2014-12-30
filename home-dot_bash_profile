@@ -1,0 +1,177 @@
+# ~/.bash_profile: executed by bash for login shells.
+
+# source the system wide bashrc if it exists
+if [ -e "/etc/bash.bashrc" ] ; then
+  source "/etc/bash.bashrc"
+fi
+
+# source the users bashrc if it exists
+if [ -e "${HOME}/.bashrc" ] ; then
+  source "${HOME}/.bashrc"
+fi
+
+# Set PATH so it includes user's private bin if it exists
+if [ -d "${HOME}/bin" ] ; then
+  export PATH="${HOME}/bin:${PATH}"
+fi
+
+# Set MANPATH so it includes users' private man if it exists
+if [ -d "${HOME}/man" ]; then
+  export MANPATH="${HOME}/man:${MANPATH}"
+fi
+
+# Set INFOPATH so it includes users' private info if it exists
+if [ -d "${HOME}/info" ]; then
+  export INFOPATH="${HOME}/info:${INFOPATH}"
+fi
+
+#export LC_ALL='C'
+export PS1='\n\u@\h:\W \t \$ '
+
+set -o vi
+export FCEDIT="/opt/local/bin/vim"
+export EDITOR="/opt/local/bin/vim"
+
+shopt -s cmdhist
+
+#set -o noclobber
+
+#export HISTIGNORE='[ \t]*:&:ls:[bf]g:exit'
+export HISTORYCONTROL=ignorespace
+export HISTFILESIZE=1000000
+export HISTSIZE=100000
+
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+
+#export JAVA_OPTS="-Djava.awt.headless=true ${JAVA_OPTS}"
+export JAVAC_OPTS="-Xlint:unchecked ${JAVAC_OPTS}"
+
+export SVN_EDITOR="/opt/local/bin/vim"
+
+export VLC_PLUGIN_PATH=/opt/local/lib/vlc/plugins
+
+#export MONGO_HOME="/opt/dev/mongodb/latest"
+#export PATH="${MONGO_HOME}/bin:${PATH}"
+
+#export MYSQL_HOME="/usr/local/mysql-5.1.43-osx10.6-x86_64"
+#export PATH="${MYSQL_HOME}/bin:${PATH}"
+
+#export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home"
+#export JAVA_HOME="$(/usr/libexec/java_home --version 1.6)"
+export JAVA_HOME="$(/usr/libexec/java_home --version 1.7)"
+#export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"
+#export JAVA_HOME="$(/usr/libexec/java_home --version 1.9)"
+#export JAVA_HOME="/usr/java/latest"
+export PATH="${JAVA_HOME}/bin:${PATH}"
+
+#export JAVA_OPTS="-XX:+UseCodeCacheFlushing -XX:+UseCompressedOops -XX:-ReduceInitialCardMarks ${JAVA_OPTS}"
+
+export ASPECTJ_HOME="/opt/dev/aspectj/latest"
+export PATH="${ASPECTJ_HOME}/bin:${PATH}"
+#export CLASSPATH="${ASPECTJ_HOME}/lib/aspectjrt.jar:${CLASSPATH}"
+
+export ANT_HOME="${HOME}/dev/apache/ant/latest"
+export PATH="${ANT_HOME}/bin:${PATH}"
+
+#export M2_HOME="/usr/share/maven"
+export MAVEN_HOME="/opt/local/share/java/maven3"
+export M2_HOME="${MAVEN_HOME}"
+export PATH="${M2_HOME}/bin:${PATH}"
+#export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=512m ${MAVEN_OPTS}"
+
+#export CATALINA_HOME="/opt/dev/apache/tomcat/latest"
+#export PATH="${CATALINA_HOME}/bin:${PATH}"
+#export CATALINA_OPTS="-XX:-UseLWPSynchronization -Dhttp.keepAlive=true -XX:PermSize=256m -XX:MaxPermSize=512m -Xms2G -Xmx2G -XX:MaxGCPauseMillis=850 -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9095 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true -Dcom.sun.management.jmxremote.password.file="${CATALINA_HOME}/conf/jmxremote.password" -Dcom.sun.management.jmxremote.access.file="${CATALINA_HOME}/conf/jmxremote.access" -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
+#export JPDA_TRANSPORT=dt_socket
+#export JPDA_ADDRESS=5005
+#export JPDA_SUSPEND=n
+#export CATALINA_OPTS="-agentlib:jdwp=transport=${JPDA_TRANSPORT},server=y,suspend=${JPDA_SUSPEND},address=${JPDA_ADDRESS} ${CATALINA_OPTS}"
+
+#export JAD_HOME="/opt/dev/jad158g"
+#export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
+#export PATH="${JAD_HOME}/bin:${PATH}"
+
+#export YJP_HOME="/Applications/YourKit_Java_Profiler_8.0.30.app"
+#export YJP_HOME="/Applications/YourKit_Java_Profiler_11.0.3.app"
+#export YJP_HOME="/Applications/YourKit_Java_Profiler_2013_build_13076.app"
+export YJP_HOME="/Applications/YourKit_Java_Profiler_2014_build_14092.app"
+export PATH="${YJP_HOME}/bin:${PATH}"
+
+export YJP_LIBRARY_PATH="${YJP_HOME}/bin/mac"
+export YJP_LIBRARY_FILE="${YJP_LIBRARY_PATH}/libyjpagent.jnilib"
+
+export GRADLE_HOME="/opt/dev/gradle/latest"
+export PATH="${GRADLE_HOME}/bin:${PATH}"
+
+export GRAILS_HOME="/opt/dev/grails/latest"
+export PATH="${GRAILS_HOME}/bin:${PATH}"
+
+export GROOVY_HOME="/opt/dev/groovy/latest"
+export PATH="${GROOVY_HOME}/bin:${PATH}"
+
+#export SCALA_HOME="/opt/dev/scala/latest"
+#export PATH="${SCALA_HOME}/bin:${PATH}"
+
+#export SBT_HOME="/opt/dev/scala-sbt/latest"
+#export PATH="${SBT_HOME}/bin:${PATH}"
+
+#export MONETDB_HOME="/usr/local/monetdb"
+#export PATH="${MONETDB_HOME}/bin:${PATH}"
+
+#export NTRUTIL_HOME="/Users/chad/dev/NtrUtil"
+#export PATH="${NTRUTIL_HOME}/bin:${PATH}"
+
+#export JBOSS_HOME="/opt/dev/jboss/as/latest"
+#export PATH="${JBOSS_HOME}/bin:${PATH}"
+
+#export JETTY_HOME="/opt/dev/jetty/latest"
+#export PATH="${JETTY_HOME}/bin:${PATH}"
+
+export POSTGRES_HOME="/opt/local/lib/postgresql93"
+export PATH="${POSTGRES_HOME}/bin:${PATH}"
+
+export R_HOME="/Library/Frameworks/R.framework/Resources"
+export PATH="${R_HOME}/bin:${PATH}"
+
+export HBASE_HOME="/opt/dev/apache/hbase/latest"
+export PATH="${HBASE_HOME}/bin:${PATH}"
+
+#export CXF_HOME="/opt/dev/apache/cxf/latest"
+#export PATH="${CXF_HOME}/bin:${PATH}"
+
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  . /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+#
+# Update PATH variable for use with Fink.
+#
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+export PATH="/sw/bin:/sw/sbin:${PATH}"
+
+#
+# Update PATH variable for use with MacPorts.
+#
+export PATH="/opt/local/apache2/bin:${PATH}"
+export PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
+export PATH="/opt/local/libexec/gnubin/:${PATH}"
+
+#
+# Update PATH variable for use with "/usr/local" installations.
+#
+export PATH="/usr/local/bin:${PATH}"
+
+#
+# Ruby
+#
+#[[ -s "/Users/chad/.rvm/scripts/rvm" ]] && source "/Users/chad/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+#export PATH="${HOME}/.rvm/gems/ruby-1.9.3-p0/bin:${HOME}/.rvm/gems/ruby-1.9.3-p0@global/bin:${HOME}/.rvm/rubies/ruby-1.9.3-p0/bin:${HOME}/.rvm/bin:${PATH}"
+
+#
+# Unknown and/or not-understood stuff
+#
+#export PATH=~/Documents/tools/hadoop/bin:$PATH
+#export PATH=~/Documents/tools/oozie/bin:$PATH
+#export PATH=~/Documents/tools/pig/bin:$PATH
+
