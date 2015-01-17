@@ -26,3 +26,5 @@
 	lga = log --all --objects --pretty=medium --graph --summary --name-status
 	pull = pull --rebase
 	check-whitespace = log --all --objects --pretty=medium --check
+[credential]
+	helper = osxkeychain

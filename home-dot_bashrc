@@ -1,4 +1,6 @@
 alias please='sudo'
+alias pirate_cp='cp -r'
+
 alias ls='ls --color=auto'
 alias lsc='ls --color'
 alias ll='ls -altrh --color=auto'

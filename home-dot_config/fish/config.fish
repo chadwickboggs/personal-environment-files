@@ -2,6 +2,8 @@
 #fish_vi_key_bindings
 
 alias please='sudo'
+alias pirate_cp='cp -r'
+
 alias cpv='cp -v'
 alias mvv='mv -v'
 alias acp='/opt/dev/advcpmv/bin/cp -g'
