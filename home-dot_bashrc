@@ -1,5 +1,6 @@
 alias please='sudo'
 alias pirate_cp='cp -r'
+alias burn='rm -rf'
 
 alias ls='ls --color=auto'
 alias lsc='ls --color'

@@ -3,6 +3,7 @@
 
 alias please='sudo'
 alias pirate_cp='cp -r'
+alias burn='rm -rf'
 
 alias cpv='cp -v'
 alias mvv='mv -v'
