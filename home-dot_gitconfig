@@ -1,6 +1,8 @@
 [user]
 	email = 
-	name = 
+#	email = chad_boggs@cable.comcast.com
+	name =
+#	name = Chadwick Boggs
 [core]
 	excludesfile = /Users/cboggs001c/.gitignore_global
 	pager = less -+$LESS -FR
