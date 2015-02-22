@@ -1,7 +1,7 @@
 [user]
-	email = 
+	email = chadwickboggs@gmail.com
 #	email = chad_boggs@cable.comcast.com
-	name =
+	name = Chadwick Boggs
 #	name = Chadwick Boggs
 [core]
 	excludesfile = /Users/cboggs001c/.gitignore_global
