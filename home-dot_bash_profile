@@ -64,8 +64,8 @@ export VLC_PLUGIN_PATH=/opt/local/lib/vlc/plugins
 
 #export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home"
 #export JAVA_HOME="$(/usr/libexec/java_home --version 1.6)"
-export JAVA_HOME="$(/usr/libexec/java_home --version 1.7)"
-#export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"
+#export JAVA_HOME="$(/usr/libexec/java_home --version 1.7)"
+export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"
 #export JAVA_HOME="$(/usr/libexec/java_home --version 1.9)"
 #export JAVA_HOME="/usr/java/latest"
 export PATH="${JAVA_HOME}/bin:${PATH}"
@@ -97,8 +97,7 @@ export PATH="${M2_HOME}/bin:${PATH}"
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
 #export PATH="${JAD_HOME}/bin:${PATH}"
 
-#export YJP_HOME="/Applications/YourKit_Java_Profiler_2014_build_14092.app/Contents/Resources"
-export YJP_HOME="/Applications/YourKit_Java_Profiler_2015_EAP_build_15018.app/Contents/Resources"
+export YJP_HOME="/Applications/YourKit_Java_Profiler_2015_EAP_build_15038.app/Contents/Resources"
 export PATH="${YJP_HOME}/bin:${PATH}"
 
 export YJP_LIBRARY_PATH="${YJP_HOME}/bin/mac"
