@@ -63,3 +63,6 @@ alias sshfss='sshfs -C -o workaround=all -o reconnect'
 
 #alias fixow='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user; killall Finder; echo "Open With has been rebuilt.  Finder will relaunch."'
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/cboggs001c/.gvm/bin/gvm-init.sh" ]] && source "/Users/cboggs001c/.gvm/bin/gvm-init.sh"

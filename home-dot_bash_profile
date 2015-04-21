@@ -85,13 +85,13 @@ export M2_HOME="${MAVEN_HOME}"
 export PATH="${M2_HOME}/bin:${PATH}"
 #export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=512m ${MAVEN_OPTS}"
 
-#export CATALINA_HOME="/opt/dev/apache/tomcat/latest"
-#export PATH="${CATALINA_HOME}/bin:${PATH}"
-#export CATALINA_OPTS="-XX:-UseLWPSynchronization -Dhttp.keepAlive=true -XX:PermSize=256m -XX:MaxPermSize=512m -Xms2G -Xmx2G -XX:MaxGCPauseMillis=850 -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9095 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true -Dcom.sun.management.jmxremote.password.file="${CATALINA_HOME}/conf/jmxremote.password" -Dcom.sun.management.jmxremote.access.file="${CATALINA_HOME}/conf/jmxremote.access" -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
-#export JPDA_TRANSPORT=dt_socket
-#export JPDA_ADDRESS=5005
-#export JPDA_SUSPEND=n
-#export CATALINA_OPTS="-agentlib:jdwp=transport=${JPDA_TRANSPORT},server=y,suspend=${JPDA_SUSPEND},address=${JPDA_ADDRESS} ${CATALINA_OPTS}"
+export CATALINA_HOME="/opt/dev/apache/tomcat/latest"
+export PATH="${CATALINA_HOME}/bin:${PATH}"
+export CATALINA_OPTS="-XX:-UseLWPSynchronization -Dhttp.keepAlive=true -XX:PermSize=256m -XX:MaxPermSize=512m -Xms2G -Xmx2G -XX:MaxGCPauseMillis=850 -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9095 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true -Dcom.sun.management.jmxremote.password.file="${CATALINA_HOME}/conf/jmxremote.password" -Dcom.sun.management.jmxremote.access.file="${CATALINA_HOME}/conf/jmxremote.access" -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
+export JPDA_TRANSPORT=dt_socket
+export JPDA_ADDRESS=5005
+export JPDA_SUSPEND=n
+export CATALINA_OPTS="-agentlib:jdwp=transport=${JPDA_TRANSPORT},server=y,suspend=${JPDA_SUSPEND},address=${JPDA_ADDRESS} ${CATALINA_OPTS}"
 
 #export JAD_HOME="/opt/dev/jad158g"
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
@@ -109,7 +109,8 @@ export PATH="${GRADLE_HOME}/bin:${PATH}"
 export GRAILS_HOME="/opt/dev/grails/latest"
 export PATH="${GRAILS_HOME}/bin:${PATH}"
 
-export GROOVY_HOME="/opt/dev/groovy/latest"
+#export GROOVY_HOME="/opt/dev/groovy/latest"
+export GROOVY_HOME="/opt/local/share/java/groovy"
 export PATH="${GROOVY_HOME}/bin:${PATH}"
 
 #export SCALA_HOME="/opt/dev/scala/latest"
@@ -177,3 +178,6 @@ export PATH="/usr/local/bin:${PATH}"
 #export PATH=~/Documents/tools/oozie/bin:$PATH
 #export PATH=~/Documents/tools/pig/bin:$PATH
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/cboggs001c/.gvm/bin/gvm-init.sh" ]] && source "/Users/cboggs001c/.gvm/bin/gvm-init.sh"
