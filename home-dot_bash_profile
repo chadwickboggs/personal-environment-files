@@ -97,7 +97,7 @@ export CATALINA_OPTS="-agentlib:jdwp=transport=${JPDA_TRANSPORT},server=y,suspen
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
 #export PATH="${JAD_HOME}/bin:${PATH}"
 
-export YJP_HOME="/Applications/YourKit_Java_Profiler_2015_EAP_build_15038.app/Contents/Resources"
+export YJP_HOME="/Applications/YourKit_Java_Profiler_2015_build_15050.app/Contents/Resources"
 export PATH="${YJP_HOME}/bin:${PATH}"
 
 export YJP_LIBRARY_PATH="${YJP_HOME}/bin/mac"

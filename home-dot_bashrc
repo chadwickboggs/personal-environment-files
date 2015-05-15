@@ -1,6 +1,7 @@
 alias please='sudo'
 alias pls='sudo'
 alias pirate_cp='cp -r'
+alias pcp='cp -r'
 alias burn='rm -rf'
 
 alias ls='ls --color=auto'
@@ -9,7 +10,9 @@ alias ll='ls -altrh --color=auto'
 alias llc='ls -altrh --color'
 alias cpv='cp -v'
 alias mvv='mv -v'
+alias cpr='cp -r'
 alias acp='/opt/dev/advcpmv/bin/cp -g'
+alias acpr='/opt/dev/advcpmv/bin/cp -rg'
 alias acpv='/opt/dev/advcpmv/bin/cp -gv'
 alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
@@ -66,3 +69,4 @@ alias sshfss='sshfs -C -o workaround=all -o reconnect'
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/cboggs001c/.gvm/bin/gvm-init.sh" ]] && source "/Users/cboggs001c/.gvm/bin/gvm-init.sh"
+
