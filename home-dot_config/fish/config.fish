@@ -51,9 +51,9 @@ alias mtailm='multitail --mergeall'
 # Load environment specific files if exist.
 #
 set env_specific_filename ~/.config/fish/config.fish-(uname -a | awk '{ print $1 }')
-echo "env_specific_filename: $env_specific_filename"
+#echo "env_specific_filename: $env_specific_filename"
 if test -e $env_specific_filename
-	echo "Loading $env_specific_filename"
+	#echo "Loading $env_specific_filename"
 	. $env_specific_filename
 end
 
