@@ -30,16 +30,6 @@ alias mtailm='multitail --mergeall'
 #alias gitcss='git log --pretty=format:'%h' -n 1'
 #alias gitco='git checkout'
 
-alias jh6='export JAVA_HOME="$(/usr/libexec/java_home --version 1.6)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
-alias jh7='export JAVA_HOME="$(/usr/libexec/java_home --version 1.7)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
-alias jh8='export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
-alias jh9='export JAVA_HOME="$(/usr/libexec/java_home --version 1.9)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
-
-alias vi='vim'
-alias gvi='mvim'
-alias gvim='mvim'
-alias gview='mview'
-
 #alias locate='/usr/bin/locate'
 
 #alias gprd='gradle --parallel --refresh-dependencies'
@@ -68,5 +58,15 @@ alias sshfss='sshfs -C -o workaround=all -o reconnect'
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/cboggs001c/.gvm/bin/gvm-init.sh" ]] && source "/Users/cboggs001c/.gvm/bin/gvm-init.sh"
+[[ -s "${HOME}/.gvm/bin/gvm-init.sh" ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
+
+#
+# Load environment specific files if exist.
+#
+env_specific_filename=.bashrc-$(uname -a | awk '{ print $1 }')
+#echo "env_specific_filename: ${env_specific_filename}"
+if [[ -e "${env_specific_filename}" ]]; then
+	#echo "Loading ${env_specific_filename}"
+	. "${env_specific_filename}"
+fi
 

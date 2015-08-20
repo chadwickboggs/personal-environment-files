@@ -65,12 +65,7 @@ export VLC_PLUGIN_PATH=/opt/local/lib/vlc/plugins
 #export MYSQL_HOME="/usr/local/mysql-5.1.43-osx10.6-x86_64"
 #export PATH="${MYSQL_HOME}/bin:${PATH}"
 
-#export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home"
-#export JAVA_HOME="$(/usr/libexec/java_home --version 1.6)"
-#export JAVA_HOME="$(/usr/libexec/java_home --version 1.7)"
-export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"
-#export JAVA_HOME="$(/usr/libexec/java_home --version 1.9)"
-#export JAVA_HOME="/usr/java/latest"
+export JAVA_HOME="/usr/java/latest"
 export PATH="${JAVA_HOME}/bin:${PATH}"
 
 #export JAVA_OPTS="-XX:+UseCodeCacheFlushing -XX:+UseCompressedOops -XX:-ReduceInitialCardMarks ${JAVA_OPTS}"
@@ -153,19 +148,6 @@ export RABBITMQ_HOME="/opt/dev/rabbitmq/server/latest"
 #export PATH="${CXF_HOME}/bin:${PATH}"
 
 #
-# Update PATH variable for use with Fink.
-#
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
-export PATH="/sw/bin:/sw/sbin:${PATH}"
-
-#
-# Update PATH variable for use with MacPorts.
-#
-export PATH="/opt/local/apache2/bin:${PATH}"
-export PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
-export PATH="/opt/local/libexec/gnubin/:${PATH}"
-
-#
 # Update PATH variable for use with "/usr/local" installations.
 #
 export PATH="/usr/local/bin:${PATH}"
@@ -185,12 +167,22 @@ export PATH="/usr/local/bin:${PATH}"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/cboggs001c/.gvm/bin/gvm-init.sh" ]] && source "/Users/cboggs001c/.gvm/bin/gvm-init.sh"
+[[ -s "${HOME}/.gvm/bin/gvm-init.sh" ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
 
 #
 # Bash Completions
 #
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
 	. /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+#
+# Load environment specific files if exist.
+#
+env_specific_filename=.bashrc-$(uname -a | awk '{ print $1 }')
+#echo "env_specific_filename: ${env_specific_filename}"
+if [[ -e "${env_specific_filename}" ]]; then
+	#echo "Loading ${env_specific_filename}"
+	. "${env_specific_filename}"
 fi
 
