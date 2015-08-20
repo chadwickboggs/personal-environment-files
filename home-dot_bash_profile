@@ -177,6 +177,14 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
 fi
 
 #
+# Prepend "/opt/local/bin" to path if exists.
+#
+
+if [[ -e "/opt/local/bin" ]]; then
+	export PATH="/opt/local/bin:${PATH}"
+fi
+
+#
 # Load environment specific files if exist.
 #
 env_specific_filename=.bashrc-$(uname -a | awk '{ print $1 }')
