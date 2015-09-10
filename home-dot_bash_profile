@@ -73,13 +73,7 @@ export CATALINA_OPTS_NWT_JMX="-Dcom.sun.management.jmxremote -Dcom.sun.managemen
 export CATALINA_OPTS_NWT_HTTP="-Dhttp.keepAlive=true -Dhttp.maxConnections=1000 -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
 
 export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT_JVM}"
-if [[ -f ${HOME}/.rxjdbcrc.client ]]; then
-        CATALINA_OPTS_NWT_ENV=$(${HOME}/.rxjdbcrc.client)
-        export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} ${CATALINA_OPTS_NWT_ENV}"
-elif [[ -f ${HOME}/.rxjdbcrc.client-server ]]; then
-        CATALINA_OPTS_NWT_ENV=$(${HOME}/.rxjdbcrc.client-server)
-        export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} ${CATALINA_OPTS_NWT_ENV}"
-fi
+[[ -f ${HOME}/.rxjdbcrc ]] && export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} $(${HOME}/.rxjdbcrc.client)"
 export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} ${CATALINA_OPTS_NWT_AWT} ${CATALINA_OPTS_NWT_JMX} ${CATALINA_OPTS_NWT_HTTP}"
 								
 #export CATALINA_OPTS_NWT="-XX:-UseLWPSynchronization -Dhttp.keepAlive=true -XX:PermSize=256m -XX:MaxPermSize=512m -Xms2G -Xmx2G -XX:MaxGCPauseMillis=850 -XX:+UseConcMarkSweepGC -Djava.awt.headless=true -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9095 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true -Dcom.sun.management.jmxremote.password.file="${CATALINA_HOME}/conf/jmxremote.password" -Dcom.sun.management.jmxremote.access.file="${CATALINA_HOME}/conf/jmxremote.access" -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
