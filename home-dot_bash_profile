@@ -73,11 +73,11 @@ export CATALINA_OPTS_NWT_JMX="-Dcom.sun.management.jmxremote -Dcom.sun.managemen
 export CATALINA_OPTS_NWT_HTTP="-Dhttp.keepAlive=true -Dhttp.maxConnections=1000 -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
 
 export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT_JVM}"
-if [[ -f ~/.rxjdbcrc.client ]]; then
-        CATALINA_OPTS_NWT_ENV=$(~/.rxjdbcrc.client)
+if [[ -f ${HOME}/.rxjdbcrc.client ]]; then
+        CATALINA_OPTS_NWT_ENV=$(${HOME}/.rxjdbcrc.client)
         export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} ${CATALINA_OPTS_NWT_ENV}"
-elif [[ -f ~/.rxjdbcrc.client-server ]]; then
-        CATALINA_OPTS_NWT_ENV=$(~/.rxjdbcrc.client-server)
+elif [[ -f ${HOME}/.rxjdbcrc.client-server ]]; then
+        CATALINA_OPTS_NWT_ENV=$(${HOME}/.rxjdbcrc.client-server)
         export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} ${CATALINA_OPTS_NWT_ENV}"
 fi
 export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT} ${CATALINA_OPTS_NWT_AWT} ${CATALINA_OPTS_NWT_JMX} ${CATALINA_OPTS_NWT_HTTP}"
@@ -155,9 +155,9 @@ export PATH="/usr/local/bin:${PATH}"
 #
 # Unknown and/or not-understood stuff
 #
-#export PATH=~/Documents/tools/hadoop/bin:$PATH
-#export PATH=~/Documents/tools/oozie/bin:$PATH
-#export PATH=~/Documents/tools/pig/bin:$PATH
+#export PATH=${HOME}/Documents/tools/hadoop/bin:$PATH
+#export PATH=${HOME}/Documents/tools/oozie/bin:$PATH
+#export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!

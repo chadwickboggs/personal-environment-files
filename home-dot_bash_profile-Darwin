@@ -64,7 +64,7 @@ export PATH="/usr/local/bin:${PATH}"
 #
 # Unknown and/or not-understood stuff
 #
-#export PATH=~/Documents/tools/hadoop/bin:$PATH
-#export PATH=~/Documents/tools/oozie/bin:$PATH
-#export PATH=~/Documents/tools/pig/bin:$PATH
+#export PATH=${HOME}/Documents/tools/hadoop/bin:$PATH
+#export PATH=${HOME}/Documents/tools/oozie/bin:$PATH
+#export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
