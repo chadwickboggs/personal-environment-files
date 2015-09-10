@@ -168,7 +168,4 @@ export PATH="/usr/local/bin:${PATH}"
 #
 env_specific_filename=.bash_profile-$(uname -a | awk '{ print $1 }')
 #echo "env_specific_filename: ${env_specific_filename}"
-if [[ -e "${env_specific_filename}" ]]; then
-	#echo "Loading ${env_specific_filename}"
-	. "${env_specific_filename}"
-fi
+[[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
