@@ -1,0 +1,18 @@
+syntax on
+set hlsearch
+set guifont=Inconsolata:h12
+set number
+set tabstop=4
+set shiftwidth=4
+set wrapscan
+set ignorecase
+set autoindent
+set vb
+set guifont=LiberationMono\ 10
+highlight Statement ctermfg=0 guifg=LightGray
+if exists("loaded_nerd_tree")
+	autocmd VimEnter * NERDTree | wincmd p
+endif
+nmap <c-h> <c-w>h<c-w><Bar>
+nmap <c-l> <c-w>l<c-w><Bar>
+nmap <c-p> <c-w>p<c-w><Bar>
