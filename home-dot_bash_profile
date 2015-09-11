@@ -160,6 +160,6 @@ export PATH="/usr/local/bin:${PATH}"
 #
 # Load environment specific files if exist.
 #
-env_specific_filename=.bash_profile-$(uname -a | awk '{ print $1 }')
+env_specific_filename=${HOME}/.bash_profile-$(uname -a | awk '{ print $1 }')
 #echo "env_specific_filename: ${env_specific_filename}"
 [[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
