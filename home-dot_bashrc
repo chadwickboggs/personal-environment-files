@@ -17,6 +17,7 @@ alias acpr='/opt/dev/advcpmv/bin/cp -rg'
 alias acpv='/opt/dev/advcpmv/bin/cp -gv'
 alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
+alias rscp='rsync_cp'
 
 alias treec='tree -C'
 alias morec='more -R'

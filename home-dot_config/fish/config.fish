@@ -16,6 +16,8 @@ alias acpr='/opt/dev/advcpmv/bin/cp -gr'
 alias acpv='/opt/dev/advcpmv/bin/cp -gv'
 alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
+alias rscp='rsync_cp'
+
 #alias gitcs='git log --pretty=format:'%H' -n 1'
 #alias gitcss='git log --pretty=format:'%h' -n 1'
 #alias gitss='git status -s'
