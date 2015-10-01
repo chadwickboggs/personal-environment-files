@@ -25,35 +25,22 @@ export PATH="${POSTGRES_HOME}/bin:${PATH}"
 #
 # Bash Completions
 #
-if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
-	. /opt/local/etc/profile.d/bash_completion.sh
-fi
-
-#
-# Prepend "/opt/local/bin" to path if exists.
-#
-
-if [[ -e "/opt/local/bin" ]]; then
-	export PATH="/opt/local/bin:${PATH}"
-fi
+[[ -f "/opt/local/etc/profile.d/bash_completion.sh" ]] && . /opt/local/etc/profile.d/bash_completion.sh
 
 #
 # Update PATH variable for use with Fink.
 #
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
-export PATH="/sw/bin:/sw/sbin:${PATH}"
+[[ -f "/sw/bin/init.sh" ]] && . /sw/bin/init.sh
+#[[ -d "/sw/sbin" ]] && export PATH="/sw/sbin:/sw/bin:${PATH}"
+#[[ -d "/sq/bin" ]] && export PATH="/sw/sbin:/sw/bin:${PATH}"
 
 #
 # Update PATH variable for use with MacPorts.
 #
-export PATH="/opt/local/apache2/bin:${PATH}"
-export PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
-export PATH="/opt/local/libexec/gnubin/:${PATH}"
-
-#
-# Update PATH variable for use with "/usr/local" installations.
-#
-export PATH="/usr/local/bin:${PATH}"
+[[ -d "/opt/local/apache2/bin" ]] && export PATH="/opt/local/apache2/bin:${PATH}"
+[[ -d "/opt/local/bin" ]] && export PATH="/opt/local/bin:${PATH}"
+[[ -d "/opt/local/sbin" ]] && export PATH="/opt/local/sbin:${PATH}"
+[[ -d "/opt/local/libexec/gnubin" ]] && export PATH="/opt/local/libexec/gnubin/:${PATH}"
 
 #
 # Ruby

@@ -1,34 +1,22 @@
 # ~/.bash_profile: executed by bash for login shells.
 
 # source the system wide bashrc if it exists
-if [ -e "/etc/bash.bashrc" ] ; then
-  source "/etc/bash.bashrc"
-fi
+[[ -e "/etc/bash.bashrc" ]] && . "/etc/bash.bashrc"
 
 # source the users bashrc if it exists
-if [ -e "${HOME}/.bashrc" ] ; then
-  source "${HOME}/.bashrc"
-fi
+[[ -e "${HOME}/.bashrc" ]] && . "${HOME}/.bashrc"
 
 # Set PATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ] ; then
-  export PATH="${HOME}/bin:${PATH}"
-fi
+[[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"
 
 # Set PATH so it includes user's private bin.comcast if it exists
-if [ -d "${HOME}/bin.comcast" ] ; then
-  export PATH="${HOME}/bin.comcast:${PATH}"
-fi
+[[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
 
 # Set MANPATH so it includes users' private man if it exists
-if [ -d "${HOME}/man" ]; then
-  export MANPATH="${HOME}/man:${MANPATH}"
-fi
+[[ -d "${HOME}/man" ]] && export MANPATH="${HOME}/man:${MANPATH}"
 
 # Set INFOPATH so it includes users' private info if it exists
-if [ -d "${HOME}/info" ]; then
-  export INFOPATH="${HOME}/info:${INFOPATH}"
-fi
+[[ -d "${HOME}/info" ]] && export INFOPATH="${HOME}/info:${INFOPATH}"
 
 export LC_ALL='C'
 export LC_ALL=en_US.UTF-8
@@ -136,11 +124,6 @@ export RABBITMQ_HOME="/opt/dev/rabbitmq/server/latest"
 #export PATH="${CXF_HOME}/bin:${PATH}"
 
 #
-# Update PATH variable for use with "/usr/local" installations.
-#
-export PATH="/usr/local/bin:${PATH}"
-
-#
 # Ruby
 #
 #[[ -s "/Users/chad/.rvm/scripts/rvm" ]] && source "/Users/chad/.rvm/scripts/rvm"  # This loads RVM into a shell session.
@@ -153,9 +136,6 @@ export PATH="/usr/local/bin:${PATH}"
 #export PATH=${HOME}/Documents/tools/oozie/bin:$PATH
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "${HOME}/.gvm/bin/gvm-init.sh" ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
 
 #
 # Load environment specific files if exist.
