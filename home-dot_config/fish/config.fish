@@ -36,7 +36,7 @@ alias ll='ls -altrh --color=auto'
 #alias pgstart="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl \-D /opt/local/var/db/postgresql93/defaultdb \-l /opt/local/var/log/postgresql93/postgres.log start'"
 #alias pgstatus="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl status \-D /opt/local/var/db/postgresql93/defaultdb'"
 #alias pgstop="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl \-D /opt/local/var/db/postgresql93/defaultdb stop \-m fast'"
-alias sdiff='sdiff -w 100 -W --strip-trailing-cr'
+alias sdiff='sdiff -w 200 -W --strip-trailing-cr'
 #failed maven build? just type in surefire-report and fancy html details will open in your browser
 #alias surefire-report='mvn surefire-report:report-only && open target/site/surefire-report.html'
 alias top='top -R -o cpu'
