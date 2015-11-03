@@ -1,34 +1,22 @@
 # ~/.bash_profile: executed by bash for login shells.
 
 # source the system wide bashrc if it exists
-if [ -e "/etc/bash.bashrc" ] ; then
-  source "/etc/bash.bashrc"
-fi
+[[ -e "/etc/bash.bashrc" ]] && . "/etc/bash.bashrc"
 
 # source the users bashrc if it exists
-if [ -e "${HOME}/.bashrc" ] ; then
-  source "${HOME}/.bashrc"
-fi
+[[ -e "${HOME}/.bashrc" ]] && . "${HOME}/.bashrc"
 
 # Set PATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ] ; then
-  export PATH="${HOME}/bin:${PATH}"
-fi
+[[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"
 
 # Set PATH so it includes user's private bin.comcast if it exists
-if [ -d "${HOME}/bin.comcast" ] ; then
-  export PATH="${HOME}/bin.comcast:${PATH}"
-fi
+[[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
 
 # Set MANPATH so it includes users' private man if it exists
-if [ -d "${HOME}/man" ]; then
-  export MANPATH="${HOME}/man:${MANPATH}"
-fi
+[[ -d "${HOME}/man" ]] && export MANPATH="${HOME}/man:${MANPATH}"
 
 # Set INFOPATH so it includes users' private info if it exists
-if [ -d "${HOME}/info" ]; then
-  export INFOPATH="${HOME}/info:${INFOPATH}"
-fi
+[[ -d "${HOME}/info" ]] && export INFOPATH="${HOME}/info:${INFOPATH}"
 
 export LC_ALL='C'
 export LC_ALL=en_US.UTF-8
@@ -69,7 +57,7 @@ export PATH="${CATALINA_HOME}/bin:${PATH}"
 
 export CATALINA_OPTS_NWT_JVM="-XX:ReservedCodeCacheSize=256m -XX:-OmitStackTraceInFastThrow -XX:-UseLWPSynchronization -XX:PermSize=256m -XX:MaxPermSize=512m -Xms2G -Xmx2G -XX:MaxGCPauseMillis=850 -XX:+UseConcMarkSweepGC"
 export CATALINA_OPTS_NWT_AWT="-Djava.awt.headless=true"
-export CATALINA_OPTS_NWT_JMX="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9095 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true -Dcom.sun.management.jmxremote.password.file=conf/jmxremote.password -Dcom.sun.management.jmxremote.access.file=conf/jmxremote.access"
+export CATALINA_OPTS_NWT_JMX="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9095 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.password.file=conf/jmxremote.password -Dcom.sun.management.jmxremote.access.file=conf/jmxremote.access"
 export CATALINA_OPTS_NWT_HTTP="-Dhttp.keepAlive=true -Dhttp.maxConnections=1000 -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_EQUALS_IN_VALUE=true -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true"
 
 export CATALINA_OPTS_NWT="${CATALINA_OPTS_NWT_JVM}"
@@ -136,11 +124,6 @@ export RABBITMQ_HOME="/opt/dev/rabbitmq/server/latest"
 #export PATH="${CXF_HOME}/bin:${PATH}"
 
 #
-# Update PATH variable for use with "/usr/local" installations.
-#
-export PATH="/usr/local/bin:${PATH}"
-
-#
 # Ruby
 #
 #[[ -s "/Users/chad/.rvm/scripts/rvm" ]] && source "/Users/chad/.rvm/scripts/rvm"  # This loads RVM into a shell session.
@@ -154,12 +137,27 @@ export PATH="/usr/local/bin:${PATH}"
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "${HOME}/.gvm/bin/gvm-init.sh" ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
-
 #
 # Load environment specific files if exist.
 #
 env_specific_filename=${HOME}/.bash_profile-$(uname -a | awk '{ print $1 }')
 #echo "env_specific_filename: ${env_specific_filename}"
 [[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
+
+##
+# Your previous /Users/cboggs001c/.bash_profile file was backed up as /Users/cboggs001c/.bash_profile.macports-saved_2015-10-01_at_20:07:56
+##
+
+# MacPorts Installer addition on 2015-10-01_at_20:07:56: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+##
+# Your previous /Users/cboggs001c/.bash_profile file was backed up as /Users/cboggs001c/.bash_profile.macports-saved_2015-10-03_at_18:17:55
+##
+
+# MacPorts Installer addition on 2015-10-03_at_18:17:55: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+

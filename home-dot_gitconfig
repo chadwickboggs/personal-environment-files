@@ -1,8 +1,6 @@
 [user]
 	email = chad_boggs@cable.comcast.com
-#	email = chad_boggs@cable.comcast.com
 	name = Chadwick Boggs
-#	name = Chadwick Boggs
 [core]
 	excludesfile = /Users/cboggs001c/.gitignore_global
 	pager = less -+$LESS -FR
@@ -39,3 +37,5 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[branch]
+	autoSetupMerge = always
