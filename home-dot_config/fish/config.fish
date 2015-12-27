@@ -7,6 +7,9 @@ alias pirate_cp='cp -r'
 alias pcp='cp -r'
 alias burn='rm -rf'
 
+alias als='and ls'
+alias all='and ll'
+
 alias cpv='cp -v'
 alias cpr='cp -r'
 alias cprv='cp -rv'
