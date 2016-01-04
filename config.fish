@@ -48,6 +48,14 @@ alias grep='grep 2>/dev/null'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
 
+alias vi='vim'
+alias gvi='mvim'
+alias gvim='mvim'
+alias gview='mview'
+
+alias jh8='set -x JAVA_HOME (/usr/libexec/java_home --version 1.8); and set -x PATH $JAVA_HOME/bin PATH'
+alias jh9='set -x JAVA_HOME (/usr/libexec/java_home --version 9); and set -x PATH $JAVA_HOME/bin PATH'
+
 #
 # Load environment specific files if exist.
 #
