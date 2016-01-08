@@ -16,8 +16,16 @@ export PATH="${JAVA_HOME}/bin:${PATH}"
 #export M2_HOME="/usr/share/maven"
 export MAVEN_HOME="/opt/local/share/java/maven3"
 export M2_HOME="${MAVEN_HOME}"
-export PATH="${M2_HOME}/bin:${PATH}"
+export M3_HOME="${MAVEN_HOME}"
+export PATH="${M3_HOME}/bin:${PATH}"
 export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=512m ${MAVEN_OPTS}"
+
+#
+# Source Charter devenv.
+#
+
+charter_devenv_file=~/.bash_profile-Charter
+[[ -f "${charter_devenv_file}" ]] && . "${charter_devenv_file}"
 
 #export POSTGRES_HOME="/opt/local/lib/postgresql93"
 #export PATH="${POSTGRES_HOME}/bin:${PATH}"
