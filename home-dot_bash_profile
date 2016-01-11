@@ -71,7 +71,8 @@ export PATH="${CATALINA_HOME}/bin:${PATH}"
 #export JPDA_SUSPEND=n
 #export CATALINA_OPTS="-agentlib:jdwp=transport=${JPDA_TRANSPORT},server=y,suspend=${JPDA_SUSPEND},address=${JPDA_ADDRESS} ${CATALINA_OPTS}"
 
-export DEBUG_JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
+export JAVA_OPTS_DEBUG="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
+export JPDA_OPTS="${JAVA_OPTS_DEBUG}"
 #export CATALINA_OPTS="${DEBUG_JAVA_OPTS} ${CATALINA_OPTS_NWT}"
 #export CATALINA_OPTS="${CATALINA_OPTS_NWT}"
 
