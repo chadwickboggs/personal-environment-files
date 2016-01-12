@@ -64,12 +64,15 @@ alias sshfss='sshfs -C -o workaround=all -o reconnect'
 [[ -s "${HOME}/.gvm/bin/gvm-init.sh" ]] && source "${HOME}/.gvm/bin/gvm-init.sh"
 
 #
-# Load environment specific files if exist.
+# Load environment platform specific file if exist.
 #
-env_specific_filename=.bashrc-$(uname -a | awk '{ print $1 }')
+env_specific_filename=${HOME}/.bashrc-$(uname -a | awk '{ print $1 }')
 #echo "env_specific_filename: ${env_specific_filename}"
-if [[ -e "${env_specific_filename}" ]]; then
-	#echo "Loading ${env_specific_filename}"
-	. "${env_specific_filename}"
-fi
+[[ -e "${env_specific_filename}" ]] && . "${env_specific_filename}"
+
+#
+# Load charter specific file if exist.
+#
+charter_specific_filename="${HOME}/.bashrc-Charter"
+[[ -e "${charter_specific_filename}" ]] && . "${charter_specific_filename}"
 
