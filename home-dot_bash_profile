@@ -8,7 +8,7 @@
 
 # Set PATH so it includes user's private bin if it exists
 [[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"
-[[ -d "${HOME}/charter/bin" ]] && export PATH="${HOME}/charter/bin:${PATH}"
+[[ -d "/opt/dev/charter/bin" ]] && export PATH="/opt/dev/charter/bin:${PATH}"
 
 # Set PATH so it includes user's private bin.comcast if it exists
 [[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
@@ -19,9 +19,14 @@
 # Set INFOPATH so it includes users' private info if it exists
 [[ -d "${HOME}/info" ]] && export INFOPATH="${HOME}/info:${INFOPATH}"
 
+# Set CDPATH so it includes...
+CDPATH=".:${HOME}:/usr"
+[[ -d "/opt/workspace" ]] && export CDPATH="${CDPATH}:/opt/workspace"
+[[ -d "/opt/dev" ]] && export CDPATH="${CDPATH}:/opt/dev"
+
 export LC_ALL='C'
-export LC_ALL=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
+#export LC_CTYPE=en_US.UTF-8
 
 export PS1='\n\u@\h:\W \t \$ '
 
@@ -76,7 +81,7 @@ export JPDA_OPTS="${JAVA_OPTS_DEBUG}"
 #export CATALINA_OPTS="${DEBUG_JAVA_OPTS} ${CATALINA_OPTS_NWT}"
 #export CATALINA_OPTS="${CATALINA_OPTS_NWT}"
 
-export JAVA_OPTS="-Xms2g -Xmx4g  -Dapplication.home=${HOME} -Dlogback-lib.env=filesystem -Dcom.netflix.karyon.eureka.datacenter.type=Cloud -Darchaius.deployment.region=US_WEST_2 -Darchaius.deployment.domain=default -Darchaius.deployment.environment=local -Deureka.environment=local -Deureka.datacenter=default -Dovation.app.properties.location=ws-config/ovation/ovation-local-overlay.properties -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -XX:NewSize=256m -XX:MaxNewSize=512m -XX:PermSize=512m -XX:MaxPermSize=256m -XX:+DisableExplicitGC"
+export CATALINA_OPTS="-Xms2g -Xmx4g  -Dapplication.home=${HOME} -Dlogback-lib.env=filesystem -Dcom.netflix.karyon.eureka.datacenter.type=Cloud -Darchaius.deployment.region=US_WEST_2 -Darchaius.deployment.domain=default -Darchaius.deployment.environment=local -Deureka.environment=local -Deureka.datacenter=default -Dovation.app.properties.location=ws-config/ovation/ovation-local-overlay.properties -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -XX:NewSize=256m -XX:MaxNewSize=512m -XX:PermSize=512m -XX:MaxPermSize=256m -XX:+DisableExplicitGC"
 
 #export JAD_HOME="/opt/dev/jad158g"
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
