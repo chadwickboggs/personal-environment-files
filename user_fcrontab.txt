@@ -1,2 +1,2 @@
 # run every 5 minutes
-0-59/5 * * * * /Users/cboggs1/bin/sync_folders.sh >> /Users/cboggs1/log/sync_folders.log
+0-59/15 * * * * /Users/cboggs1/bin/sync_folders.sh >> /Users/cboggs1/log/sync_folders.log
