@@ -54,7 +54,7 @@ alias sshfss='sshfs -C -o workaround=all -o reconnect'
 alias grep='grep 2>/dev/null'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
-alias brotli='/opt/workspace/brotli/tools/bro'
+alias brotli='/opt/workspace/thrid_party/brotli/tools/bro'
 
 #
 # Load environment specific files if exist.

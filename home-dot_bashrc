@@ -28,7 +28,7 @@ alias top='top -R -o cpu'
 alias sdiff='sdiff -w 200 -W --strip-trailing-cr'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
-alias brotli='/opt/workspace/brotli/tools/bro'
+alias brotli='/opt/workspace/thrid_party/brotli/tools/bro'
 
 #alias gitss='git status -s'
 #alias gitcs='git log --pretty=format:'%H' -n 1'
