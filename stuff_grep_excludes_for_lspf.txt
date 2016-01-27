@@ -1,0 +1,7 @@
+.\.idea
+.\.class
+.\.o
+.\.gif
+.\.jpg
+.\.png
+.\.svg

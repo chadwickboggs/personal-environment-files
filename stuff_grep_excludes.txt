@@ -1,0 +1,10 @@
+.idea
+*.class
+*.jar
+*.ear
+*.war
+*.o
+*.gif
+*.jpg
+*.png
+*.svg
