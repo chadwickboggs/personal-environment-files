@@ -1,0 +1,53 @@
+#
+# Project Specific Files
+#
+
+
+#
+# Environment, Tool Working Files
+#
+
+**/*~
+**/*.lock
+**/*.DS_Store
+**/*.swp
+**/*.out
+**/*.bak
+**/.rakeTasks
+**/tmp.*
+
+
+#
+# Build Artifacts
+#
+
+**/target/
+
+
+#
+# Log Files
+#
+
+**/logs/
+**/*.log
+
+
+#
+# IDE Project Files (IntelliJ, Eclipse, Netbeans)
+#
+**/.idea/
+**/*.iml
+**/atlassian-ide-plugin.xml
+**/.settings/
+**/.classpath
+**/.buildpath
+**/.project
+**/nbproject/private/
+**/nb-configuration.xml
+
+
+#
+# Ignore JRebel Files
+#
+**/rebel*.xml
+
