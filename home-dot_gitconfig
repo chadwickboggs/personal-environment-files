@@ -2,7 +2,7 @@
 	email = Chadwick.Boggs@charter.com
 	name = Chadwick Boggs
 [core]
-	excludesfile = /Users/cboggs1/.gitignore_global
+	excludesfile = /opt/workspace/personal/personal-environment-files/home-dot_config/git/ignore
 	pager = less -+$LESS -FR
 	autocrlf = input
 [filter "media"]
