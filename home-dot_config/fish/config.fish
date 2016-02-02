@@ -9,6 +9,7 @@ alias burn='rm -rf'
 
 alias als='and ls'
 alias all='and ll'
+alias cll='clear; and ll'
 
 alias cpv='cp -v'
 alias cpr='cp -r'
