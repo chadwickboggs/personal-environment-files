@@ -20,7 +20,7 @@
 [[ -d "${HOME}/info" ]] && export INFOPATH="${HOME}/info:${INFOPATH}"
 
 # Set CDPATH so it includes...
-CDPATH=".:${HOME}:/usr"
+CDPATH=".:${HOME}"
 [[ -d "/opt/workspace" ]] && export CDPATH="${CDPATH}:/opt/workspace"
 [[ -d "/opt/dev" ]] && export CDPATH="${CDPATH}:/opt/dev"
 

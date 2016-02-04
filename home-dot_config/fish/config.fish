@@ -11,6 +11,8 @@ alias als='and ls'
 alias all='and ll'
 alias cll='clear; and ll'
 
+alias cdl='cdll'
+
 alias cpv='cp -v'
 alias cpr='cp -r'
 alias cprv='cp -rv'
@@ -23,6 +25,8 @@ alias acpv='/opt/dev/advcpmv/bin/cp -gv'
 alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
 alias rscp='rsync_cp'
+
+#alias qfb='qbuild.sh fast'
 
 #alias gitcs='git log --pretty=format:'%H' -n 1'
 #alias gitcss='git log --pretty=format:'%h' -n 1'

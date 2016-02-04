@@ -33,6 +33,8 @@ alias mtail='multitail'
 alias mtailm='multitail --mergeall'
 alias brotli='/opt/workspace/thrid_party/brotli/tools/bro'
 
+#alias qfb='qbuild.sh fast'
+
 #alias gitss='git status -s'
 #alias gitcs='git log --pretty=format:'%H' -n 1'
 #alias gitcss='git log --pretty=format:'%h' -n 1'
