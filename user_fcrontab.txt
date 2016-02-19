@@ -1,8 +1,8 @@
-0-59/3 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/Dropbox/charter /Users/cboggs1/own_cloud/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
-0-59/5 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/own_cloud/charter /Users/cboggs1/google_drive/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
-0-59/7 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/google_drive/charter /Users/cboggs1/amazon_cloud_drive/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
-0-59/9 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/amazon_cloud_drive/charter /Users/cboggs1/icloud/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
-0-59/4 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/Dropbox/personal /Users/cboggs1/own_cloud/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
-0-59/6 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/own_cloud/personal /Users/cboggs1/google_drive/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
-0-59/8 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/google_drive/personal /Users/cboggs1/amazon_cloud_drive/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
-0-59/10 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/amazon_cloud_drive/personal /Users/cboggs1/icloud/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
+0-59/9 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/Dropbox/charter /Users/cboggs1/own_cloud/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
+0-59/11 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/own_cloud/charter /Users/cboggs1/google_drive/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
+0-59/13 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/google_drive/charter /Users/cboggs1/amazon_cloud_drive/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
+0-59/15 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/amazon_cloud_drive/charter /Users/cboggs1/icloud/charter >> /Users/cboggs1/log/unisonize_folders_charter.log
+0-59/8 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/Dropbox/personal /Users/cboggs1/own_cloud/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
+0-59/10 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/own_cloud/personal /Users/cboggs1/google_drive/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
+0-59/12 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/google_drive/personal /Users/cboggs1/amazon_cloud_drive/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
+0-59/14 * * * * /Users/cboggs1/bin/unisonize_folders.sh -auto -batch /Users/cboggs1/amazon_cloud_drive/personal /Users/cboggs1/icloud/personal >> /Users/cboggs1/log/unisonize_folders_personal.log
