@@ -31,7 +31,8 @@ alias top='top -R -o cpu'
 alias sdiff='sdiff -w 200 -W --strip-trailing-cr'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
-alias brotli='/opt/workspace/thrid_party/brotli/tools/bro'
+alias brotli='/opt/workspace/third_party/brotli/tools/bro'
+#alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 
 #alias qfb='qbuild.sh fast'
 
