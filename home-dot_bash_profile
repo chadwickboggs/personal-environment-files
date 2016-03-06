@@ -144,3 +144,9 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 #
 
+#
+# Place Perl6 in PATH after MacPorts because the MacPorts version doesn't work.
+#
+export PERL6_HOME="/opt/dev/perl/latest"
+export PATH="${PERL6_HOME}/bin:${PATH}"
+
