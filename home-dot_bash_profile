@@ -150,3 +150,5 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PERL6_HOME="/opt/dev/perl/latest"
 export PATH="${PERL6_HOME}/bin:${PATH}"
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
