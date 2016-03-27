@@ -147,8 +147,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 #
 # Place Perl6 in PATH after MacPorts because the MacPorts version doesn't work.
 #
-export PERL6_HOME="/opt/dev/perl/latest"
-export PATH="${PERL6_HOME}/bin:${PATH}"
+#export PERL6_HOME="/opt/dev/perl/latest"
+#export PATH="${PERL6_HOME}/bin:${PATH}"
 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
