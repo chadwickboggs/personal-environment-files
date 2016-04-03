@@ -83,3 +83,7 @@ env_specific_filename=${HOME}/.bashrc-$(uname -a | awk '{ print $1 }')
 charter_specific_filename="${HOME}/.bashrc-Charter"
 [[ -e "${charter_specific_filename}" ]] && . "${charter_specific_filename}"
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/cboggs1/.sdkman"
+[[ -s "/Users/cboggs1/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cboggs1/.sdkman/bin/sdkman-init.sh"
