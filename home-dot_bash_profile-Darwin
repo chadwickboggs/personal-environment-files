@@ -12,6 +12,7 @@ export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"
 export PATH="${JAVA_HOME}/bin:${PATH}"
 
 #export JAVA_OPTS="-XX:+UseCodeCacheFlushing -XX:+UseCompressedOops -XX:-ReduceInitialCardMarks ${JAVA_OPTS}"
+export JAVA_OPTS="-XX:+UseG1GC ${JAVA_OPTS}"
 
 #export M2_HOME="/usr/share/maven"
 export MAVEN_HOME="/opt/local/share/java/maven3"
