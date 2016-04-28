@@ -1,1 +1,8 @@
 VisualHostKey=yes
+
+Host 10.2.*
+	ProxyCommand ssh -q -W %h:%p 54.200.115.163
+
+Host 172.28.*
+	ProxyCommand ssh -q -W %h:%p 52.2.221.104
+
