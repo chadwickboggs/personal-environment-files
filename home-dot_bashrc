@@ -21,6 +21,9 @@ alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
 alias rscp='rsync_cp'
 
+alias first_line='head -n 1'
+alias last_line='tail -n 1'
+
 alias morec='more -R'
 alias lessc='less -R'
 alias lc='lessc'
@@ -32,6 +35,9 @@ alias mtail='multitail'
 alias mtailm='multitail --mergeall'
 alias brotli='/opt/workspace/third_party/brotli/tools/bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
+
+#alias ssh_to_chadwickboggs_dot_com='ssh -i ~/.ssh/kp1.pem ec2-user@chadwickboggs.com'
+#alias mosh_to_chadwickboggs_dot_com='mosh --ssh=\'ssh -i ~/.ssh/kp1.pem\' ec2-user@chadwickboggs.com'
 
 #alias qfb='qbuild.sh fast'
 

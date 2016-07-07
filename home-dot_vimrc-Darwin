@@ -9,8 +9,9 @@ set wrapscan
 set ignorecase
 set autoindent
 set vb
-set guifont=LiberationMono\ 10
+set guifont=LiberationMono\ 12
 highlight Statement ctermfg=0 guifg=LightGray
+highlight Normal ctermfg=DarkBlue
 if exists("loaded_nerd_tree")
 	autocmd VimEnter * NERDTree | wincmd p
 endif

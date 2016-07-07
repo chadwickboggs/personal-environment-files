@@ -70,7 +70,7 @@ export CATALINA_OPTS="-Xms2g -Xmx4g  -Dapplication.home=${HOME} -Dlogback-lib.en
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
 #export PATH="${JAD_HOME}/bin:${PATH}"
 
-export YJP_HOME="/Applications/YourKit_Java_Profiler_2015_build_15050.app/Contents/Resources"
+export YJP_HOME="/Applications/YourKit-Java-Profiler-2016.06 /Contents/Resources"
 export PATH="${YJP_HOME}/bin:${PATH}"
 
 export YJP_LIBRARY_PATH="${YJP_HOME}/bin/mac"

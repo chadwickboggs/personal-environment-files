@@ -20,6 +20,9 @@ alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
 alias rscp='rsync_cp'
 
+alias first_line='head -n 1'
+alias last_line='tail -n 1'
+
 #alias qfb='qbuild.sh fast'
 
 #alias gitcs='git log --pretty=format:'%H' -n 1'
