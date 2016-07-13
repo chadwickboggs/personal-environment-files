@@ -24,8 +24,8 @@ export CDPATH=".:${HOME}"
 [[ -d "/opt/workspace" ]] && export CDPATH="${CDPATH}:/opt/workspace"
 [[ -d "/opt/dev" ]] && export CDPATH="${CDPATH}:/opt/dev"
 
-#export LC_ALL='C'
-export LC_ALL=en_US.UTF-8
+export LC_ALL='C'
+#export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
 export PS1='\n\u@\h:\W \t \$ '
@@ -41,6 +41,9 @@ export HISTSIZE=100000
 
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+
+export BROTLI_HOME="/opt/workspace/third_party/brotli"
+export PATH="${PATH}:${BROTLI_HOME}/bin:${BROTLI_HOME}/python"
 
 #export JAVA_OPTS="-Djava.awt.headless=true ${JAVA_OPTS}"
 #export JAVAC_OPTS="-Xlint:unchecked ${JAVAC_OPTS}"

@@ -33,7 +33,7 @@ alias top='top -R -o cpu'
 alias sdiff='sdiff -w 200 -W --strip-trailing-cr'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
-alias brotli='/opt/workspace/third_party/brotli/tools/bro'
+alias brotli='bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 
 #alias ssh_to_chadwickboggs_dot_com='ssh -i ~/.ssh/kp1.pem ec2-user@chadwickboggs.com'
