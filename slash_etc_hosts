@@ -1,0 +1,33 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1		localhost
+127.0.0.2		cassandra02.enwd.co.sc.charterlab.com
+255.255.255.255	broadcasthost
+::1				localhost
+
+#
+# Dev Jumpbox:			54.200.115.163			(cboggs1)
+# Dev1 Jumpbox:			192.168.220.225			(cboggs1)
+# Dev2 Jumpbox:			54.148.137.213			(cboggs1)
+# Dev Portal Jumpbox:	portal.dev-charter.net	(ec2-user)
+# EngProd Jumpbox:		52.2.221.104			(ec2-user)
+#
+
+54.200.115.163	ec2-54-200-115-163.us-west-2.compute.amazonaws.com jumpbox
+192.168.220.225	dv-cnet-olympus-i-3d9e1437.us-west-2.compute.internal jumpbox1
+54.148.137.213	ec2-54-148-137-213.us-west-2.compute.amazonaws.com jumpbox2
+
+54.213.179.30	portal.dev-charter.net	jumpbox_portal
+
+52.7.111.251	jumpbox_engprod
+52.2.221.104	jumpbox_engprod_east
+54.200.131.174	jumpbox_engprod_west
+
+#54.85.107.163	api.hipchat.com
+#52.204.52.223	api.hipchat.com
+#52.73.169.137	api.hipchat.com
+
