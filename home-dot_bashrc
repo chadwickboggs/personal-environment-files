@@ -36,6 +36,10 @@ alias mtailm='multitail --mergeall'
 alias brotli='bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 
+alias gvb='gview $(ls build_20*.log|last_line)'
+alias gvm='gview $(ls mvn_20*.log|last_line)'
+alias mvne='mvn -e'
+
 #alias ssh_to_chadwickboggs_dot_com='ssh -i ~/.ssh/kp1.pem ec2-user@chadwickboggs.com'
 #alias mosh_to_chadwickboggs_dot_com='mosh --ssh=\'ssh -i ~/.ssh/kp1.pem\' ec2-user@chadwickboggs.com'
 

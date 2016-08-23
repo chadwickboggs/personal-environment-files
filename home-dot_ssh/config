@@ -1,8 +1,22 @@
 VisualHostKey=yes
 
+Host awsdev
+  HostName olympus.dev-charter.net
+
+#User ec2-user
+#IdentityFile ~/.ssh/ec2-user_DevVPC.pem
+
 Host 10.2.*
 	ProxyCommand ssh -q -W %h:%p 54.200.115.163
+	StrictHostKeyChecking no
+    User ec2-user
+    IdentityFile ~/.ssh/ec2-user_DevVPC.pem
 
 Host 172.28.*
 	ProxyCommand ssh -q -W %h:%p 52.2.221.104
+	StrictHostKeyChecking no
+
+Host 172.30.*
+	ProxyCommand ssh -q -W %h:%p 172.28.165.59
+	StrictHostKeyChecking no
 
