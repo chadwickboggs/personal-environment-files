@@ -4,6 +4,6 @@ alias jh8='export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"; export PA
 alias jh9='export JAVA_HOME="$(/usr/libexec/java_home --version 9)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 
 alias vi='vim'
-alias gvi='mvim'
-alias gvim='mvim'
-alias gview='mview'
+alias gvi='mvim 2> /dev/null'
+alias gvim='mvim 2> /dev/null'
+alias gview='mview 2> /dev/null'

@@ -115,6 +115,9 @@ export PATH="${GROOVY_HOME}/bin:${PATH}"
 
 export RABBITMQ_HOME="/opt/dev/rabbitmq/server/latest"
 
+export MICRO_HOME="/opt/dev/micro/instances/1.0.1"
+export PATH="${MICRO_HOME}:${PATH}"
+
 #export CXF_HOME="/opt/dev/apache/cxf/latest"
 #export PATH="${CXF_HOME}/bin:${PATH}"
 

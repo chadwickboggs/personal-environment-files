@@ -63,6 +63,7 @@ alias brotli='bro'
 alias gvb='gview (ls build_20*.log|last_line)'
 alias gvm='gview (ls mvn_20*.log|last_line)'
 alias mvne='mvn -e'
+alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
 
 #
 # Load environment specific files if exist.
