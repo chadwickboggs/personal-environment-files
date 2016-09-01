@@ -60,8 +60,8 @@ alias mtailm='multitail --mergeall'
 alias brotli='bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 
-alias gvb='gview (ls build_20*.log|last_line)'
-alias gvm='gview (ls mvn_20*.log|last_line)'
+alias gvb='gview (ls build_20*.log|last_line) 2> /dev/null'
+alias gvm='gview (ls mvn_20*.log|last_line) 2> /dev/null'
 alias mvne='mvn -e'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
 

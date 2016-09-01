@@ -1,7 +1,6 @@
 syntax on
 set mouse=a
 set hlsearch
-set guifont=Inconsolata:h12
 set number
 set tabstop=4
 set shiftwidth=4
