@@ -1,0 +1,20 @@
+{
+    "autoclose": true,
+    "autoindent": true,
+    "colorscheme": "zenburn",
+    "cursorline": true,
+    "gofmt": true,
+    "goimports": false,
+    "ignorecase": false,
+    "indentchar": " ",
+    "linter": true,
+    "ruler": true,
+    "savecursor": false,
+    "saveundo": false,
+    "scrollmargin": 3,
+    "scrollspeed": 2,
+    "statusline": true,
+    "syntax": true,
+    "tabsize": 4,
+    "tabstospaces": false
+}
