@@ -39,3 +39,5 @@
 	required = true
 [branch]
 	autoSetupMerge = always
+[commit]
+	template = /Users/cboggs1/.stCommitMsg
