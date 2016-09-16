@@ -1,4 +1,6 @@
-syntax on
+syntax enable
+set background=light
+colorscheme solarized
 set mouse=a
 set hlsearch
 set number
