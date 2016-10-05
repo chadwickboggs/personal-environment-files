@@ -66,6 +66,8 @@ alias tbl='tail -f (ls build_20*.log|last_line) 2> /dev/null'
 alias gvm='gview (ls mvn_dependency_tree_20*.txt|last_line) 2> /dev/null'
 alias mvne='mvn -e'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
+alias lighty='sudo lighttpd -f /opt/local/etc/lighttpd/lighttpd.conf'
+alias simple_http_server='python -m SimpleHTTPServer 8000'
 
 #
 # Load environment specific files if exist.
