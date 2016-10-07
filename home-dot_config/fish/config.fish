@@ -63,6 +63,7 @@ alias brotli='bro'
 
 alias gvb='gview (ls build_20*.log|last_line) 2> /dev/null'
 alias tbl='tail -f (ls build_20*.log|last_line) 2> /dev/null'
+alias cbl='cat (ls build_20*.log|last_line) 2> /dev/null'
 alias gvm='gview (ls mvn_dependency_tree_20*.txt|last_line) 2> /dev/null'
 alias mvne='mvn -e'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
