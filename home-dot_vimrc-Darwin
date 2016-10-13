@@ -1,6 +1,5 @@
 syntax enable
 set background=light
-#colorscheme macvim
 set mouse=a
 set hlsearch
 set number
