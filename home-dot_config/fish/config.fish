@@ -69,6 +69,7 @@ alias mvne='mvn -e'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
 alias lighty='sudo lighttpd -f /opt/local/etc/lighttpd/lighttpd.conf'
 alias simple_http_server='python -m SimpleHTTPServer 8000'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors 2> /dev/null'
 
 #
 # Load environment specific files if exist.
