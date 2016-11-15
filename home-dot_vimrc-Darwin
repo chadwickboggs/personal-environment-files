@@ -9,7 +9,7 @@ set wrapscan
 set ignorecase
 set autoindent
 set vb
-set guifont=LiberationMono\ 12
+set guifont=FiraCode-Regular:h13
 highlight Statement ctermfg=0 guifg=LightGray
 highlight Normal ctermfg=DarkBlue
 if exists("loaded_nerd_tree")
