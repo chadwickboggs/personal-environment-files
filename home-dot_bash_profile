@@ -8,10 +8,11 @@
 
 # Set PATH so it includes user's private bin if it exists
 [[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"
+[[ -d "/opt/workspace/personal/rand" ]] && export PATH="/opt/workspace/personal/rand:${PATH}"
 [[ -d "/opt/dev/charter/bin" ]] && export PATH="/opt/dev/charter/bin:${PATH}"
 
 # Set PATH so it includes user's private bin.comcast if it exists
-[[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
+#[[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
 
 # Set MANPATH so it includes users' private man if it exists
 [[ -d "${HOME}/man" ]] && export MANPATH="${HOME}/man:${MANPATH}"
@@ -73,7 +74,8 @@ export CATALINA_OPTS="-Xms1g -Xmx2g  -Dapplication.home=${HOME} -Dlogback-lib.en
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"
 #export PATH="${JAD_HOME}/bin:${PATH}"
 
-export YJP_HOME="/Applications/YourKit-Java-Profiler-2016.06.app/Contents/Resources"
+export YJP_HOME="/Applications/YourKit-Java-Profiler-2016.02.app/Contents/Resources"
+#export YJP_HOME="/Applications/YourKit-Java-Profiler-2016.06.app/Contents/Resources"
 export PATH="${YJP_HOME}/bin:${PATH}"
 
 export YJP_LIBRARY_PATH="${YJP_HOME}/bin/mac"
