@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0   http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>${user.home}/.m2/repository</localRepository>
+    <servers>
+        <server>
+            <id>charter-snapshot</id>
+            <username>charter-dev</username>
+            <password>charter-dev</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <id>alwaysActive</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+				<nexus.repo.location>http://nexus.charter.com...</nexus.repo.location>
+            </properties>
+            <repositories>
+                <repository>
+                    <id>charter-central</id>
+                    <name>Charter Advanced Engineering Nexus Central</name>
+					<!-- <url>http://nexusnpm.dev-charter.net/nexus/content/groups/public/</url> -->
+                    <url>http://52.11.85.172/nexus/content/groups/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>warn</checksumPolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>warn</checksumPolicy>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>spring-milestones</id>
+                    <name>Spring Milestones</name>
+                    <url>http://repo.spring.io/milestone</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>warn</checksumPolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>    
+                <repository>
+                    <id>spring-snapshots</id>
+                    <url>http://repo.spring.io/libs-snapshot</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>    
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>maven2-central</id>
+                    <name>Maven Plugin Repository</name>
+                    <url>http://repo1.maven.org/maven2</url>
+                    <layout>default</layout>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>charter-central</id>
+                    <name>Charter Advanced Engineering Nexus Central</name>
+					<!-- <url>http://nexusnpm.dev-charter.net/nexus/content/groups/public/</url> -->
+                    <url>http://52.11.85.172/nexus/content/groups/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>warn</checksumPolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>warn</checksumPolicy>
+                    </snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>spring-snapshots</id>
+                    <url>http://repo.spring.io/libs-snapshot</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+</settings>
