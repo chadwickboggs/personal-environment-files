@@ -7,10 +7,11 @@ Host awsdev
 #IdentityFile ~/.ssh/ec2-user_DevVPC.pem
 
 Host 10.2.*
-	ProxyCommand ssh -q -W %h:%p 54.200.115.163
+#	ProxyCommand ssh -q -W %h:%p 54.200.115.163
+	ProxyCommand ssh -q -W %h:%p awsdev
 	StrictHostKeyChecking no
-    User ec2-user
-    IdentityFile ~/.ssh/ec2-user_DevVPC.pem
+#    User ec2-user
+#    IdentityFile ~/.ssh/ec2-user_DevVPC.pem
 
 Host 172.28.*
 	ProxyCommand ssh -q -W %h:%p 52.2.221.104
