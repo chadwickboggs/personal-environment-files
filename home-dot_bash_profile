@@ -81,6 +81,9 @@ export PATH="${YJP_HOME}/bin:${PATH}"
 export YJP_LIBRARY_PATH="${YJP_HOME}/bin/mac"
 export YJP_LIBRARY_FILE="${YJP_LIBRARY_PATH}/libyjpagent.jnilib"
 
+export AMQ_HOME="/opt/dev/apache/activemq/latest"
+export PATH="${AMQ_HOME}/bin:${PATH}"
+
 export GRADLE_HOME="/opt/dev/gradle/latest"
 export PATH="${GRADLE_HOME}/bin:${PATH}"
 
