@@ -1,0 +1,23 @@
+[global_config]
+  tab_position = bottom
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    background_color = "#fdf6e3"
+    foreground_color = "#657b83"
+    visible_bell = True
+  [[chad.0]]
+    cursor_color = "#aaaaaa"
+    background_color = "#fdf6e3"
+    foreground_color = "#657b83"
+    visible_bell = True
