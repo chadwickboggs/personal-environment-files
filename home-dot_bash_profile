@@ -127,6 +127,16 @@ export PATH="${MICRO_HOME}:${PATH}"
 #export PATH="${CXF_HOME}/bin:${PATH}"
 
 #
+# What you do is edit the "bashttpd_response.json" file in $BASHTTPD_HOME, then...
+#
+#  $ socat tcp-l:8080,reuseaddr,fork EXEC:./bashttpd
+#
+# ...but watch where $CWD is.
+#
+export BASHTTPD_HOME="/opt/workspace/third_party/bashttpd"
+export PATH="$BASHTTPD_HOME:$PATH"
+
+#
 # Ruby
 #
 #[[ -s "/Users/chad/.rvm/scripts/rvm" ]] && source "/Users/chad/.rvm/scripts/rvm"  # This loads RVM into a shell session.
