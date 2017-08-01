@@ -68,7 +68,7 @@ export PATH="${CATALINA_HOME}/bin:${PATH}"
 export JAVA_OPTS_DEBUG="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
 export JPDA_OPTS="${JAVA_OPTS_DEBUG}"
 
-export CATALINA_OPTS="-Xms1g -Xmx2g  -Dapplication.home=${HOME} -Dlogback-lib.env=filesystem -Dcom.netflix.karyon.eureka.datacenter.type=Cloud -Darchaius.deployment.region=US_WEST_2 -Darchaius.deployment.domain=default -Darchaius.deployment.environment=local -Deureka.environment=local -Deureka.datacenter=default -Dovation.app.properties.location=ws-config/ovation/ovation-local-overlay.properties -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -XX:NewSize=256m -XX:MaxNewSize=512m -XX:PermSize=512m -XX:MaxPermSize=256m -XX:+DisableExplicitGC"
+export CATALINA_OPTS="-Xms1g -Xmx2g -Dapplication.home=${HOME} -Dlogback-lib.env=filesystem -Dcom.netflix.karyon.eureka.datacenter.type=Cloud -Darchaius.deployment.region=US_WEST_2 -Darchaius.deployment.domain=default -Darchaius.deployment.environment=local -Deureka.environment=local -Deureka.datacenter=default -Dovation.app.properties.location=ws-config/ovation/ovation-local-overlay.properties -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -XX:NewSize=256m -XX:MaxNewSize=512m -XX:PermSize=512m -XX:MaxPermSize=256m -XX:+DisableExplicitGC"
 
 #export JAD_HOME="/opt/dev/jad158g"
 #export JAD_HOME="/Applications/MacJAD.app/Contents/Resources"

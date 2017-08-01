@@ -71,6 +71,13 @@ alias lighty='sudo lighttpd -f /opt/local/etc/lighttpd/lighttpd.conf'
 alias simple_http_server='python -m SimpleHTTPServer 8000'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors 2> /dev/null'
 
+alias mvni='mvn -Dmaven.wagon.http.ssl.insecure=true -e'
+alias mvnui='mvn -Dmaven.wagon.http.ssl.insecure=true -e -U'
+alias mvnt='mvn -DskipTests -Dmaven.test.skip=true -e'
+alias mvntu='mvn -DskipTests -Dmaven.test.skip=true -e -U'
+alias mvnti='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e'
+alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e -U'
+
 #
 # Load environment specific files if exist.
 #

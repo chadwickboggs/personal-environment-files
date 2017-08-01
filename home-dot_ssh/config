@@ -1,3 +1,5 @@
+Host * ServerAliveInterval 300
+
 VisualHostKey=yes
 
 Host awsdev
