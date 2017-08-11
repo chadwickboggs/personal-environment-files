@@ -43,8 +43,8 @@ export HISTSIZE=100000
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
-export BROTLI_HOME="/opt/workspace/third_party/brotli"
-export PATH="${PATH}:${BROTLI_HOME}/bin:${BROTLI_HOME}/python"
+#export BROTLI_HOME="/opt/workspace/third_party/brotli"
+#export PATH="${PATH}:${BROTLI_HOME}/bin:${BROTLI_HOME}/python"
 
 #export JAVA_OPTS="-Djava.awt.headless=true ${JAVA_OPTS}"
 #export JAVAC_OPTS="-Xlint:unchecked ${JAVAC_OPTS}"

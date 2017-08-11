@@ -34,7 +34,7 @@ alias top='top -R -o cpu'
 alias sdiff='sdiff -w 200 -W --strip-trailing-cr'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
-alias brotli='bro'
+#alias brotli='bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 
 alias gvbl='gview $(ls build_20*.log|last_line) 2> /dev/null'
