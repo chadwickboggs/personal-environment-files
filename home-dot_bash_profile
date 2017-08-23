@@ -53,7 +53,8 @@ bind "set show-all-if-ambiguous on"
 #export PATH="${MONGO_HOME}/bin:${PATH}"
 
 #export MYSQL_HOME="/usr/local/mysql-5.1.43-osx10.6-x86_64"
-#export PATH="${MYSQL_HOME}/bin:${PATH}"
+export MYSQL_HOME="/opt/local/lib/mysql57"
+export PATH="${MYSQL_HOME}/bin:${PATH}"
 
 #export ASPECTJ_HOME="/opt/dev/aspectj/latest"
 #export PATH="${ASPECTJ_HOME}/bin:${PATH}"
