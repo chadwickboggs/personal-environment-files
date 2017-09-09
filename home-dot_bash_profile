@@ -196,4 +196,4 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 
 # added by Anaconda2 4.4.0 installer
-export PATH="/Users/cboggs1/anaconda/bin:$PATH"
+export PATH="$PATH:/Users/cboggs1/anaconda/bin"

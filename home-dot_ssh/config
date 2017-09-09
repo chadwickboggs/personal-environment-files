@@ -1,4 +1,4 @@
-Host * ServerAliveInterval 300
+Host * ServerAliveInterval 15
 
 VisualHostKey=yes
 
