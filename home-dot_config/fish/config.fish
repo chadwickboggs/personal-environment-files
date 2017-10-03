@@ -84,7 +84,7 @@ alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.
 set env_specific_filename ~/.config/fish/config.fish-(uname -a | awk '{ print $1 }')
 #echo "env_specific_filename: $env_specific_filename"
 if test -e $env_specific_filename
-	echo "Loading \"$env_specific_filename\""
+#	echo "Loading \"$env_specific_filename\""
 	source $env_specific_filename
 end
 
@@ -92,7 +92,7 @@ end
 # iTerm2 Shell Integration: https://www.iterm2.com/documentation-shell-integration.html
 #
 if test -e ~/.iterm2_shell_integration.fish
-	echo "Loading \"~/.iterm2_shell_integration.fish\""
+#	echo "Loading \"~/.iterm2_shell_integration.fish\""
 	source ~/.iterm2_shell_integration.fish
 end
 
