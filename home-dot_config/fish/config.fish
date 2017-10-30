@@ -58,6 +58,7 @@ alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
 alias grep='grep 2>/dev/null'
 alias mtail='multitail'
 alias mtailm='multitail --mergeall'
+alias bro='brotli'
 #alias brotli='bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 
