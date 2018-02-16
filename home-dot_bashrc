@@ -100,7 +100,8 @@ alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
 #
 # Load environment platform specific file if exist.
 #
-env_specific_filename=${HOME}/.bashrc-$(uname -a | awk '{ print $1 }')
+#env_specific_filename=${HOME}/.bashrc-$(uname -a | awk '{ print $1 }')
+env_specific_filename=${HOME}/.bashrc-$(uname)
 #echo "env_specific_filename: ${env_specific_filename}"
 [[ -e "${env_specific_filename}" ]] && . "${env_specific_filename}"
 

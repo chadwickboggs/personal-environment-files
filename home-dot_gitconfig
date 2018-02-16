@@ -1,22 +1,28 @@
 [user]
-	email = Chadwick.Boggs@charter.com
 	name = Chadwick Boggs
+	email = chadwickboggs@gmail.com
+
 [core]
 	excludesfile = /opt/workspace/personal/personal-environment-files/home-dot_config/git/ignore
 	pager = less -+$LESS -FR
 	autocrlf = input
+
 [filter "media"]
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
 [push]
 	default = current
+
 [alias]
 	st = status
 	sts = status -s
@@ -27,17 +33,28 @@
 	lga = log --all --objects --pretty=medium --graph --summary --name-status
 	pull = pull --rebase
 	check-whitespace = log --all --objects --pretty=medium --check
+
 [credential]
 	helper = osxkeychain
+
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
 [branch]
 	autoSetupMerge = always
+
 [commit]
 	template = /Users/cboggs1/.stCommitMsg
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

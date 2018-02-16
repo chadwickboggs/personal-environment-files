@@ -20,7 +20,7 @@ export M2_HOME="${MAVEN_HOME}"
 export M3_HOME="${MAVEN_HOME}"
 export PATH="${M3_HOME}/bin:${PATH}"
 export MAVEN_OPTS="-Xmx2048m -Dlicensing.skip ${MAVEN_OPTS}"
-[[ $(java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
+#[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
 
 #
 # Source Charter devenv.
@@ -64,4 +64,9 @@ charter_devenv_file=~/.bash_profile-Charter
 #export PATH=${HOME}/Documents/tools/hadoop/bin:$PATH
 #export PATH=${HOME}/Documents/tools/oozie/bin:$PATH
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
+
+#
+# HDF5
+#
+HDF5_USE_FILE_LOCKING="FALSE"
 
