@@ -37,6 +37,7 @@ alias mtailm='multitail --mergeall'
 alias bro='brotli'
 #alias brotli='bro'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
+alias atom='atom-beta'
 
 alias gvbl='gview $(ls build_20*.log|last_line) 2> /dev/null'
 alias tbl='tail -F $(ls build_20*.log|last_line) 2> /dev/null'

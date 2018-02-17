@@ -79,6 +79,8 @@ alias mvntu='mvn -DskipTests -Dmaven.test.skip=true -e -U'
 alias mvnti='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e'
 alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e -U'
 
+alias atom='atom-beta'
+
 #
 # Load environment specific files if exist.
 #
