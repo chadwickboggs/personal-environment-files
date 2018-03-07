@@ -3,7 +3,7 @@
 	email = chadwickboggs@gmail.com
 
 [core]
-	excludesfile = /opt/workspace/personal/personal-environment-files/home-dot_config/git/ignore
+	excludesfile = /Users/cboggs001c/.gitignore_global
 	pager = less -+$LESS -FR
 	autocrlf = input
 

@@ -23,7 +23,7 @@
 # Set CDPATH so it includes...
 export CDPATH=".:${HOME}"
 [[ -d "/opt/workspace" ]] && export CDPATH="${CDPATH}:/opt/workspace"
-[[ -d "/opt/dev" ]] && export CDPATH="${CDPATH}:/opt/dev"
+#[[ -d "/opt/app" ]] && export CDPATH="${CDPATH}:/opt/app"
 
 #export LC_ALL='C'
 export LC_ALL=en_US.UTF-8
