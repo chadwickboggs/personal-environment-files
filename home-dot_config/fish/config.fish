@@ -2,7 +2,7 @@
 #fish_vi_key_bindings
 
 alias please='sudo'
-alias pls='sudo'
+alias pls='/usr/bin/sudo'
 alias pirate_cp='cp -r'
 alias pcp='cp -r'
 alias burn='rm -rf'

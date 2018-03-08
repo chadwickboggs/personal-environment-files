@@ -9,7 +9,8 @@
 # Set PATH so it includes user's private bin if it exists
 [[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"
 [[ -d "/opt/workspace/personal/rand" ]] && export PATH="/opt/workspace/personal/rand:${PATH}"
-[[ -d "/opt/dev/charter/bin" ]] && export PATH="/opt/dev/charter/bin:${PATH}"
+[[ -d "/opt/app/charter/bin" ]] && export PATH="/opt/app/charter/bin:${PATH}"
+[[ -d "/opt/app/comcast/scripts" ]] && export PATH="/opt/app/comcast/scripts:${PATH}"
 
 # Set PATH so it includes user's private bin.comcast if it exists
 #[[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
@@ -201,3 +202,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # added by Anaconda2 4.4.0 installer
 export PATH="$PATH:/Users/cboggs1/anaconda/bin"
+
+# Hack until -Darwin source gets fixed:
+export PATH="/Applications/Docker.app/Contents/Resources/bin:/opt/local/libexec/gnubin/:/opt/local/sbin:/opt/local/share/java/maven3/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/bin:$PATH"
+
