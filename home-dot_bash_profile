@@ -159,6 +159,11 @@ export PATH="$BASHTTPD_HOME:$PATH"
 #export PATH=${HOME}/Documents/tools/oozie/bin:$PATH
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
+#
+# HBase
+#
+export HBASE_HOME="/opt/app/apache/hbase/latest"
+export PATH="${HBASE_HOME}/bin:$PATH"
 
 #
 # Load environment specific files if exist.
