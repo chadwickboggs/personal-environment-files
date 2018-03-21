@@ -125,8 +125,12 @@ export PATH="${GROOVY_HOME}/bin:${PATH}"
 #export R_HOME="/Library/Frameworks/R.framework/Resources"
 #export PATH="${R_HOME}/bin:${PATH}"
 
-#export HBASE_HOME="/opt/dev/apache/hbase/latest"
-#export PATH="${HBASE_HOME}/bin:${PATH}"
+export HADOOP_HOME="/opt/app/apache/hadoop/latest"
+export HDFS_HOME=${HADOOP_HOME}
+export PATH="${HADOOP_HOME}/bin:$PATH"
+
+export HBASE_HOME="/opt/app/apache/hbase/latest"
+export PATH="${HBASE_HOME}/bin:${PATH}"
 
 export RABBITMQ_HOME="/opt/dev/rabbitmq/server/latest"
 
@@ -158,12 +162,6 @@ export PATH="$BASHTTPD_HOME:$PATH"
 #export PATH=${HOME}/Documents/tools/hadoop/bin:$PATH
 #export PATH=${HOME}/Documents/tools/oozie/bin:$PATH
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
-
-#
-# HBase
-#
-export HBASE_HOME="/opt/app/apache/hbase/latest"
-export PATH="${HBASE_HOME}/bin:$PATH"
 
 #
 # Load environment specific files if exist.
