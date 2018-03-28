@@ -1,0 +1,1 @@
+0 12 * * * /opt/local/libexec/gnubin/updatedb 2>&1 >> /Users/cboggs001c/logs/fcrontab.log

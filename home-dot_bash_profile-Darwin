@@ -20,7 +20,7 @@ export M2_HOME="${MAVEN_HOME}"
 export M3_HOME="${MAVEN_HOME}"
 export PATH="${M3_HOME}/bin:${PATH}"
 #export MAVEN_OPTS="-Xmx1560m -Djavax.net.ssl.trustStore=$HOME/stuff/mavenKeystore.jks ${MAVEN_OPTS}"
-export MAVEN_OPTS="-Xmx1560m -Dlicensing.skip ${MAVEN_OPTS}"
+export MAVEN_OPTS="-Xmx786m -Dlicensing.skip -Dmaven.wagon.http.ssl.insecure=true"
 #[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
 
 #
