@@ -67,6 +67,11 @@ charter_devenv_file=~/.bash_profile-Charter
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
 #
+# Ansible
+#
+export ANSIBLE_HOSTS="$HOME/ansible/hosts"
+
+#
 # HDF5
 #
 HDF5_USE_FILE_LOCKING="FALSE"
