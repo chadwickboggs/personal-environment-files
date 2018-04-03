@@ -1,15 +1,18 @@
 all:
 	children:
-		sctspe-po-a:
-			hosts:
-				sctspe-po-a[1:4]p.sys.comcast.net
 		spectra-as-a:
 			hosts:
 				spectra-as-a[11:12]p.sys.comcast.net
+		sctspe-po-a:
+			hosts:
+				sctspe-po-a[1:4]p.sys.comcast.net
 		spectra-as-z:
 			hosts:
 				spectra-as-z0[1:9]p.sys.comcast.net
 				spectra-as-z[10:40]p.sys.comcast.net
+			children:
+				spectra:
+					spectra-as-z[10:40]p.sys.comcast.net
 		spectra-po-a:
 			hosts:
 				spectra-po-a[1:16]p.sys.comcast.net

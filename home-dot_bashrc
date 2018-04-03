@@ -20,6 +20,8 @@ alias acpv='/opt/dev/advcpmv/bin/cp -gv'
 alias amv='/opt/dev/advcpmv/bin/mv -g'
 alias amvv='/opt/dev/advcpmv/bin/mv -gv'
 alias rscp='rsync_cp'
+alias grep='grep --color=auto'
+alias grepc='grep --color=always'
 
 alias first_line='head -n 1'
 alias last_line='tail -n 1'
