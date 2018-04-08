@@ -81,6 +81,8 @@ alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.
 
 alias atom='atom-beta'
 
+alias octave-cli='octave --no-gui-libs'
+
 #
 # Load environment specific files if exist.
 #

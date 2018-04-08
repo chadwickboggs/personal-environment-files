@@ -60,6 +60,8 @@ alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.
 
 alias pq='python -m json.tool'
 
+alias octave-cli='octave --no-gui-libs'
+
 #alias ssh_to_chadwickboggs_dot_com='ssh -i ~/.ssh/kp1.pem ec2-user@chadwickboggs.com'
 #alias mosh_to_chadwickboggs_dot_com='mosh --ssh=\'ssh -i ~/.ssh/kp1.pem\' ec2-user@chadwickboggs.com'
 
