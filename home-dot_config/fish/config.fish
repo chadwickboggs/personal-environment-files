@@ -90,7 +90,6 @@ alias octave-cli='octave --no-gui-libs'
 set env_specific_filename ~/.config/fish/config.fish-(uname)
 #echo "env_specific_filename: $env_specific_filename"
 if test -e $env_specific_filename
-#	echo "Loading \"$env_specific_filename\""
 	source $env_specific_filename
 end
 
@@ -101,4 +100,3 @@ if test -e ~/.iterm2_shell_integration.fish
 #	echo "Loading \"~/.iterm2_shell_integration.fish\""
 	source ~/.iterm2_shell_integration.fish
 end
-
