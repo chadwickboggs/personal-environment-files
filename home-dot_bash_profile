@@ -171,6 +171,9 @@ env_specific_filename="${HOME}/.bash_profile-$(uname)"
 #echo "env_specific_filename: ${env_specific_filename}"
 [[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
 
+env_specific_filename="${HOME}/.bash_profile-Comcast"
+[[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
+
 #
 # MacPorts Installer addition on 2015-10-03_at_18:17:55: adding an appropriate PATH variable for use with MacPorts.
 #

@@ -69,7 +69,7 @@ charter_devenv_file=~/.bash_profile-Charter
 #
 # Ansible
 #
-export ANSIBLE_HOSTS="$HOME/ansible/hosts"
+#export ANSIBLE_HOSTS="$HOME/ansible/hosts"
 
 #
 # HDF5
