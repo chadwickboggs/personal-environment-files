@@ -23,6 +23,10 @@ export PATH="${M3_HOME}/bin:${PATH}"
 export MAVEN_OPTS="-Xmx786m -Dlicensing.skip -Dmaven.wagon.http.ssl.insecure=true"
 #[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
 
+export ETCD_HOME="/opt/app/etcd/latest"
+PATH="${ETCD_HOME}:${PATH}"
+export ETCDCTL_API=3
+
 #
 # Source Charter devenv.
 #
