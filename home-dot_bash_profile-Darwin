@@ -14,15 +14,6 @@ export PATH="${JAVA_HOME}/bin:${PATH}"
 #export JAVA_OPTS="-XX:+UseCodeCacheFlushing -XX:+UseCompressedOops -XX:-ReduceInitialCardMarks ${JAVA_OPTS}"
 #export JAVA_OPTS="-XX:+UseG1GC ${JAVA_OPTS}"
 
-#export M2_HOME="/usr/share/maven"
-export MAVEN_HOME="/opt/local/share/java/maven3"
-export M2_HOME="${MAVEN_HOME}"
-export M3_HOME="${MAVEN_HOME}"
-export PATH="${M3_HOME}/bin:${PATH}"
-#export MAVEN_OPTS="-Xmx1560m -Djavax.net.ssl.trustStore=$HOME/stuff/mavenKeystore.jks ${MAVEN_OPTS}"
-export MAVEN_OPTS="-Xmx786m -Dlicensing.skip -Dmaven.wagon.http.ssl.insecure=true"
-#[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
-
 export ETCD_HOME="/opt/app/etcd/latest"
 PATH="${ETCD_HOME}:${PATH}"
 export ETCDCTL_API=3
@@ -84,3 +75,18 @@ HDF5_USE_FILE_LOCKING="FALSE"
 # Docker
 #
 export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
+#
+# Maven
+#
+
+export MAVEN_HOME="/opt/app/apache/maven/latest"
+#export MAVEN_HOME="/opt/local/share/java/maven3"
+export M2_HOME="${MAVEN_HOME}"
+export M3_HOME="${MAVEN_HOME}"
+export PATH="${M3_HOME}/bin:${PATH}"
+
+#export MAVEN_OPTS="-Xmx1560m -Djavax.net.ssl.trustStore=$HOME/stuff/mavenKeystore.jks ${MAVEN_OPTS}"
+export MAVEN_OPTS="-Xmx786m -Dlicensing.skip -Dmaven.wagon.http.ssl.insecure=true"
+#[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
+

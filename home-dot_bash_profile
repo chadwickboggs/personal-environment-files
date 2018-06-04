@@ -164,17 +164,6 @@ export PATH="$BASHTTPD_HOME:$PATH"
 #export PATH=${HOME}/Documents/tools/pig/bin:$PATH
 
 #
-# Load environment specific files if exist.
-#
-#env_specific_filename=${HOME}/.bash_profile-$(uname -a | awk '{ print $1 }')
-env_specific_filename="${HOME}/.bash_profile-$(uname)"
-#echo "env_specific_filename: ${env_specific_filename}"
-[[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
-
-env_specific_filename="${HOME}/.bash_profile-Comcast"
-[[ -f "${env_specific_filename}" ]] && . "${env_specific_filename}"
-
-#
 # MacPorts Installer addition on 2015-10-03_at_18:17:55: adding an appropriate PATH variable for use with MacPorts.
 #
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
@@ -215,5 +204,13 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PATH="$PATH:/Users/cboggs1/anaconda/bin"
 
 # Hack until -Darwin source gets fixed:
-export PATH="/Applications/Docker.app/Contents/Resources/bin:/opt/local/libexec/gnubin/:/opt/local/sbin:/opt/local/share/java/maven3/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/bin:$PATH"
+export PATH="/Applications/Docker.app/Contents/Resources/bin:/opt/local/libexec/gnubin/:/opt/local/sbin:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/bin:$PATH"
+
+#
+# Load environment specific files if exist.
+#
+#env_specific_filename=${HOME}/.bash_profile-$(uname -a | awk '{ print $1 }')
+env_specific_filename="${HOME}/.bash_profile-$(uname)"
+#echo "env_specific_filename: ${env_specific_filename}"
+[[ -f "${env_specific_filename}" ]] && source "${env_specific_filename}"
 

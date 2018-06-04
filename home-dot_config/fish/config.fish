@@ -101,7 +101,7 @@ end
 #
 # iTerm2 Shell Integration: https://www.iterm2.com/documentation-shell-integration.html
 #
-if test -e ~/.iterm2_shell_integration.fish
+#if test -e ~/.iterm2_shell_integration.fish
 #	echo "Loading \"~/.iterm2_shell_integration.fish\""
-	source ~/.iterm2_shell_integration.fish
-end
+#	source ~/.iterm2_shell_integration.fish
+#end
