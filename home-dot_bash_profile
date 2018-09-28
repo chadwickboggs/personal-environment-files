@@ -94,15 +94,15 @@ export JAVA_OPTS_PROFILE="-agentpath:${YJP_LIBRARY_FILE}"
 export AMQ_HOME="/opt/dev/apache/activemq/latest"
 export PATH="${AMQ_HOME}/bin:${PATH}"
 
-export GRADLE_HOME="/opt/dev/gradle/latest"
-export PATH="${GRADLE_HOME}/bin:${PATH}"
+#export GRADLE_HOME="/opt/dev/gradle/latest"
+#export PATH="${GRADLE_HOME}/bin:${PATH}"
 
-export GRAILS_HOME="/opt/dev/grails/latest"
-export PATH="${GRAILS_HOME}/bin:${PATH}"
+#export GRAILS_HOME="/opt/dev/grails/latest"
+#export PATH="${GRAILS_HOME}/bin:${PATH}"
 
-export GROOVY_HOME="/opt/dev/groovy/latest"
+#export GROOVY_HOME="/opt/dev/groovy/latest"
 #export GROOVY_HOME="/opt/local/share/java/groovy"
-export PATH="${GROOVY_HOME}/bin:${PATH}"
+#export PATH="${GROOVY_HOME}/bin:${PATH}"
 
 #export SCALA_HOME="/opt/dev/scala/latest"
 #export PATH="${SCALA_HOME}/bin:${PATH}"
@@ -189,6 +189,13 @@ export PATH="${SCALA_HOME}/bin:${PATH}"
 
 export SBT_HOME="/opt/dev/sbt/latest"
 export PATH="${SBT_HOME}/bin:${PATH}"
+
+
+#
+# Argbash (Commandline argument handling for Bash scripts)
+#
+ARGBASH_HOME="/opt/app/argbash/latest"
+PATH="${ARGBASH_HOME}/bin:${PATH}"
 
 
 ##

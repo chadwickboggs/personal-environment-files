@@ -49,6 +49,18 @@ charter_devenv_file=~/.bash_profile-Charter
 [[ -d "/opt/local/libexec/gnubin" ]] && export PATH="/opt/local/libexec/gnubin/:${PATH}"
 
 #
+# Julia Language
+#
+export JULIA_HOME="/Applications/Julia-1.0.app/Contents/Resources/julia"
+export PATH="${JULIA_HOME}/bin:${PATH}"
+
+#
+# Cargo
+#
+export CARGO_HOME="${HOME}/.cargo"
+export PATH="${CARGO_HOME}/bin:${PATH}"
+
+#
 # Ruby
 #
 #[[ -s "/Users/chad/.rvm/scripts/rvm" ]] && source "/Users/chad/.rvm/scripts/rvm"  # This loads RVM into a shell session.
