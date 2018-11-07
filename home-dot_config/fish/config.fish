@@ -93,10 +93,10 @@ if test -e $env_specific_filename
 	source $env_specific_filename
 end
 
-set env_specific_filename ~/.config/fish/config.fish-Comcast
-if test -e $env_specific_filename
-	source $env_specific_filename
-end
+#set env_specific_filename ~/.config/fish/config.fish-Comcast
+#if test -e $env_specific_filename
+#	source $env_specific_filename
+#end
 
 #
 # iTerm2 Shell Integration: https://www.iterm2.com/documentation-shell-integration.html

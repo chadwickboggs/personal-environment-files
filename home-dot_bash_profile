@@ -47,7 +47,7 @@ export HISTFILESIZE=1000000
 export HISTSIZE=100000
 
 bind "set completion-ignore-case on"
-bind "set show-all-if-ambiguous on"
+#bind "set show-all-if-ambiguous on"
 
 #export BROTLI_HOME="/opt/workspace/third_party/brotli"
 #export PATH="${PATH}:${BROTLI_HOME}/bin:${BROTLI_HOME}/python"
@@ -220,4 +220,9 @@ export PATH="/Applications/Docker.app/Contents/Resources/bin:/opt/local/libexec/
 env_specific_filename="${HOME}/.bash_profile-$(uname)"
 #echo "env_specific_filename: ${env_specific_filename}"
 [[ -f "${env_specific_filename}" ]] && source "${env_specific_filename}"
+
+
+# MacPorts Installer addition on 2018-10-03_at_16:56:06: adding an appropriate MANPATH variable for use with MacPorts.
+export MANPATH="/opt/local/share/man:$MANPATH"
+# Finished adapting your MANPATH environment variable for use with MacPorts.
 
