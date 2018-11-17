@@ -184,12 +184,6 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export SDKMAN_DIR="/Users/cboggs1/.sdkman"
 [[ -s "/Users/cboggs1/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cboggs1/.sdkman/bin/sdkman-init.sh"
 
-export SCALA_HOME="/opt/dev/scala/latest"
-export PATH="${SCALA_HOME}/bin:${PATH}"
-
-export SBT_HOME="/opt/dev/sbt/latest"
-export PATH="${SBT_HOME}/bin:${PATH}"
-
 
 #
 # Argbash (Commandline argument handling for Bash scripts)
