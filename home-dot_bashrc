@@ -121,5 +121,6 @@ charter_specific_filename="${HOME}/.bashrc-Charter"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/cboggs1/.sdkman"
-[[ -s "/Users/cboggs1/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cboggs1/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
