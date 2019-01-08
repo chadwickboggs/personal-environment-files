@@ -106,3 +106,6 @@ end
 #	echo "Loading \"~/.iterm2_shell_integration.fish\""
 #	source ~/.iterm2_shell_integration.fish
 #end
+
+set -xp PATH '/opt/local/libexec/gnubin'
+
