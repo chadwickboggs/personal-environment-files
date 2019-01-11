@@ -1,6 +1,7 @@
 #set fish_bind_mode insert
 #fish_vi_key_bindings
 
+alias cls='clear'
 alias please='sudo'
 alias pls='/usr/bin/sudo'
 alias pirate_cp='cp -r'
