@@ -9,8 +9,9 @@
 # Set PATH so it includes user's private bin if it exists
 [[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"
 [[ -d "/opt/workspace/personal/rand" ]] && export PATH="/opt/workspace/personal/rand:${PATH}"
-[[ -d "/opt/app/charter/bin" ]] && export PATH="/opt/app/charter/bin:${PATH}"
+[[ -d "/opt/app/chadwickboggs/bin" ]] && export PATH="/opt/app/chadwickboggs/bin:${PATH}"
 [[ -d "/opt/app/comcast/scripts" ]] && export PATH="/opt/app/comcast/scripts:${PATH}"
+[[ -d "/opt/workspace/personal/arris-bin" ]] && export PATH="/opt/workspace/personal/arris-bin:${PATH}"
 
 # Set PATH so it includes user's private bin.comcast if it exists
 #[[ -d "${HOME}/bin.comcast" ]] && export PATH="${HOME}/bin.comcast:${PATH}"
