@@ -85,8 +85,6 @@ alias octave-cli='octave --no-gui-libs'
 #alias pgstatus="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl status \-D /opt/local/var/db/postgresql93/defaultdb'"
 #alias pglog="tail -f /opt/local/var/log/postgresql93/postgres.log"
 
-alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
-
 #export POSTGRES_HOME=/opt/local/lib/postgresql93
 #export PATH=/opt/local/bin:/opt/local/lib/postgresql93/bin:/opt/local/sbin:$PATH
 #export PATH="/opt/local/lib/postgresql93/bin:${PATH}"

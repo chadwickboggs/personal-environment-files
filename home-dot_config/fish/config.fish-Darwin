@@ -9,6 +9,8 @@ alias gvi='mvim'
 alias gvim='mvim'
 alias gview='mview'
 
+alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
+
 set -x PATH '/Applications/Docker.app/Contents/Resources/bin' $PATH
 
 set -xp PATH '/opt/local/libexec/gnubin'

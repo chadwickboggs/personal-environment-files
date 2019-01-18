@@ -3,4 +3,6 @@ alias jh7='export JAVA_HOME="/usr/java/1.7"; export PATH="${JAVA_HOME}/bin:${PAT
 alias jh8='export JAVA_HOME="/usr/java/1.8"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 alias jh9='export JAVA_HOME="/usr/java/1.9"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 
+alias sshfss='/usr/bin/sshfs -C -o workaround=all -o reconnect'
+
 alias gvi='gvim'
