@@ -18,11 +18,10 @@ PATH="${ETCD_HOME}:${PATH}"
 export ETCDCTL_API=3
 
 #
-# Source Charter devenv.
+# Rational Team Concert
 #
-
-charter_devenv_file=~/.bash_profile-Charter
-[[ -f "${charter_devenv_file}" ]] && . "${charter_devenv_file}"
+export RTC_HOME="/opt/app/jazz/rtc-client/instances/5.0.2"
+export PATH="${RTC_HOME}/scmtools/eclipse:${PATH}"
 
 #export POSTGRES_HOME="/opt/local/lib/postgresql93"
 #export PATH="${POSTGRES_HOME}/bin:${PATH}"

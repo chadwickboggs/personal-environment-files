@@ -7,6 +7,8 @@ alias jh11='export JAVA_HOME="$(/usr/libexec/java_home --version 11)"; export PA
 alias jh12='export JAVA_HOME="$(/usr/libexec/java_home --version 12)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 alias jh13='export JAVA_HOME="$(/usr/libexec/java_home --version 13)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 
+alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
+
 alias vi='vim'
 alias gvi='mvim 2> /dev/null'
 alias gvim='mvim 2> /dev/null'
