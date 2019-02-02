@@ -43,6 +43,7 @@ alias bro='brotli'
 #alias brotli='/opt/workspace/third_party/brotli/python/bro.py'
 alias atom='atom-beta'
 
+alias vbl='view $(ls build_20*.log|last_line) 2> /dev/null'
 alias gvbl='gview $(ls build_20*.log|last_line) 2> /dev/null'
 alias tbl='tail -F $(ls build_20*.log|last_line) 2> /dev/null'
 alias cbl='cat $(ls build_20*.log|last_line) 2> /dev/null'

@@ -3,6 +3,7 @@
 	email = chadwick.boggs@arris.com
 
 [core]
+	longpaths = true
 	excludesfile = /Users/chadwickboggs/.gitignore_global
 	pager = less -+$LESS -FR
 	autocrlf = input
