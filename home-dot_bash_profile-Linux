@@ -12,3 +12,7 @@ export PATH="${JAVA_HOME}/bin:${PATH}"
 #export M2_HOME="${MAVEN_HOME}"
 #export PATH="${M2_HOME}/bin:${PATH}"
 #export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=512m ${MAVEN_OPTS}"
+
+export RTC_HOME="/opt/app/jazz/rtc-client/instances/5.0.2"
+export PATH="${RTC_HOME}/scmtools/eclipse:${PATH}"
+
