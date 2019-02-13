@@ -108,3 +108,5 @@ end
 #	source ~/.iterm2_shell_integration.fish
 #end
 
+eval (direnv hook fish)
+
