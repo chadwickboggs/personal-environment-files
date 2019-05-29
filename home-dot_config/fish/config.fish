@@ -68,18 +68,18 @@ alias gvbl='gview (ls build_20*.log|last_line) 2> /dev/null'
 alias tbl='tail -f (ls build_20*.log|last_line) 2> /dev/null'
 alias cbl='cat (ls build_20*.log|last_line) 2> /dev/null'
 alias gvml='gview (ls mvn_dependency_tree_20*.txt|last_line) 2> /dev/null'
-alias mvne='mvn -e'
+#alias mvne='mvn -e'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
 alias lighty='sudo lighttpd -f /opt/local/etc/lighttpd/lighttpd.conf'
 alias simple_http_server='python -m SimpleHTTPServer 8000'
-alias chrome='/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors 2> /dev/null'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors 2> /dev/null'
 
-alias mvni='mvn -Dmaven.wagon.http.ssl.insecure=true -e'
-alias mvnui='mvn -Dmaven.wagon.http.ssl.insecure=true -e -U'
-alias mvnt='mvn -DskipTests -Dmaven.test.skip=true -e'
-alias mvntu='mvn -DskipTests -Dmaven.test.skip=true -e -U'
-alias mvnti='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e'
-alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e -U'
+#alias mvni='mvn -Dmaven.wagon.http.ssl.insecure=true -e'
+#alias mvnui='mvn -Dmaven.wagon.http.ssl.insecure=true -e -U'
+#alias mvnt='mvn -DskipTests -Dmaven.test.skip=true -e'
+#alias mvntu='mvn -DskipTests -Dmaven.test.skip=true -e -U'
+#alias mvnti='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e'
+#alias mvntui='mvn -Dmaven.wagon.http.ssl.insecure=true -DskipTests -Dmaven.test.skip=true -e -U'
 
 alias atom='atom-beta'
 
@@ -109,4 +109,10 @@ end
 #end
 
 eval (direnv hook fish)
+
+#
+# Hide the "[I]" "vi edit mode" indicator: https://github.com/fish-shell/fish-shell/issues/3201
+#
+function fish_mode_prompt
+end
 

@@ -1,25 +1,41 @@
-# Recent settings file for Wireshark 2.4.5.
+# Recent settings file for Wireshark 3.0.1.
 #
 # This file is regenerated each time Wireshark is quit.
 # So be careful, if you want to make manual changes here.
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
 
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323002618.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323003828.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323004140.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323004527.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323010354.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323013757.pcap
+recent.capture_file: /Users/chadwickboggs/tmp/hacker-port8000-20190323025214.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323025445.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323051049.pcap
+recent.capture_file: /Users/chadwickboggs/Documents/arris/tcpdump_captures/contentingest-attivio--port17000-20190404183048.pcap
 
 ######## Recent capture filters (latest last), cannot be altered through command line ########
 
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: http.response.code == 500
+recent.display_filter: http.request.uri contains "index"
+recent.display_filter: http.request.full_uri contains "10.10.96.137"
+recent.display_filter: http.request.uri contains "connect"
+recent.display_filter: http.request.uri.path contains "connect"
+recent.display_filter: connect
+recent.display_filter: HTTP
+recent.display_filter: 500
 
 # Main window geometry.
 # Decimal numbers.
 gui.geometry_main_x: 0
 gui.geometry_main_y: 23
-gui.gtk.geometry_main_x: 20
-gui.gtk.geometry_main_y: 20
-gui.geometry_main_width: 1920
-gui.geometry_main_height: 1155
+gui.geometry_main_width: 1680
+gui.geometry_main_height: 1005
 
 # Main window maximized.
 # TRUE or FALSE (case-insensitive).
@@ -47,6 +63,42 @@ privs.warn_if_elevated: TRUE
 # Warn if npf.sys isn't loaded on Windows >= 6.0.
 # TRUE or FALSE (case-insensitive).
 privs.warn_if_no_npf: TRUE
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 0
+gui.geom.PacketDialog.y: 23
+gui.geom.PacketDialog.width: 1680
+gui.geom.PacketDialog.height: 1005
+# TRUE or FALSE (case-insensitive).
+gui.geom.PacketDialog.maximized: FALSE
+
+# Geometry and maximized state of DecodeAsDialog window.
+# Decimal integers.
+gui.geom.DecodeAsDialog.x: 454
+gui.geom.DecodeAsDialog.y: 277
+gui.geom.DecodeAsDialog.width: 750
+gui.geom.DecodeAsDialog.height: 460
+# TRUE or FALSE (case-insensitive).
+gui.geom.DecodeAsDialog.maximized: FALSE
+
+# Geometry and maximized state of DisplayFilterExpressionDialog window.
+# Decimal integers.
+gui.geom.DisplayFilterExpressionDialog.x: 270
+gui.geom.DisplayFilterExpressionDialog.y: 23
+gui.geom.DisplayFilterExpressionDialog.width: 1120
+gui.geom.DisplayFilterExpressionDialog.height: 1005
+# TRUE or FALSE (case-insensitive).
+gui.geom.DisplayFilterExpressionDialog.maximized: FALSE
+
+# Geometry and maximized state of ShowPacketBytesDialog window.
+# Decimal integers.
+gui.geom.ShowPacketBytesDialog.x: 482
+gui.geom.ShowPacketBytesDialog.y: 131
+gui.geom.ShowPacketBytesDialog.width: 1120
+gui.geom.ShowPacketBytesDialog.height: 753
+# TRUE or FALSE (case-insensitive).
+gui.geom.ShowPacketBytesDialog.maximized: FALSE
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.

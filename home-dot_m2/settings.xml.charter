@@ -15,7 +15,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-				<nexus.repo.location>http://nexus.charter.com...</nexus.repo.location>
+				    <nexus.repo.location>http://nexus.charter.com</nexus.repo.location>
             </properties>
             <repositories>
                 <repository>
@@ -46,14 +46,14 @@
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
-                </repository>    
+                </repository>
                 <repository>
                     <id>spring-snapshots</id>
                     <url>http://repo.spring.io/libs-snapshot</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
-                </repository>    
+                </repository>
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
