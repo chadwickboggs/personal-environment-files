@@ -4,6 +4,8 @@
 alias cls='clear'
 alias please='sudo'
 alias pls='/usr/bin/sudo'
+alias cycleoflife='kill'
+alias COL='kill'
 alias pirate_cp='cp -r'
 alias pcp='cp -r'
 alias burn='rm -rf'

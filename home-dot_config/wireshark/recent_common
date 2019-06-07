@@ -1,12 +1,10 @@
-# Recent settings file for Wireshark 3.0.1.
+# Recent settings file for Wireshark 3.0.2.
 #
 # This file is regenerated each time Wireshark is quit.
 # So be careful, if you want to make manual changes here.
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
 
-recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323002618.pcap
-recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323003828.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323004140.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323004527.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323010354.pcap
@@ -15,6 +13,8 @@ recent.capture_file: /Users/chadwickboggs/tmp/hacker-port8000-20190323025214.pca
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323025445.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323051049.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/tcpdump_captures/contentingest-attivio--port17000-20190404183048.pcap
+recent.capture_file: /Users/chadwickboggs/ticket/2019/201905/MNPA-624/RED_getSeriesCatalog_TF1.pcap
+recent.capture_file: /Users/chadwickboggs/ticket/2019/201905/MNPA-624/MaqHA_SNE06.pcap
 
 ######## Recent capture filters (latest last), cannot be altered through command line ########
 
