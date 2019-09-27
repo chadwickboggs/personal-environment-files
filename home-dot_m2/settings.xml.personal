@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0   http://maven.apache.org/xsd/settings-1.0.0.xsd">
 	<localRepository>${user.home}/.m2/repository</localRepository>
-    <profiles>
-        <profile>
-            <id>alwaysActive</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
+	<profiles>
+		<profile>
+			<id>alwaysActive</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
 			</activation>
-            <repositories>
-                <repository>
-                    <id>mvn-repository</id>
-                    <name>Maven Repository</name>
-                    <url>http://mvnrepository/artifacts/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                        <updatePolicy>never</updatePolicy>
-                        <checksumPolicy>warn</checksumPolicy>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                        <updatePolicy>never</updatePolicy>
-                        <checksumPolicy>warn</checksumPolicy>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>mvn-repository</id>
-                    <name>Maven Plugin Repository</name>
-                    <url>http://mvnrepository.com/maven3</url>
-                    <layout>default</layout>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <updatePolicy>never</updatePolicy>
-                    </releases>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-    </profiles>
+			<repositories>
+				<repository>
+					<id>mvn-repository</id>
+					<name>Maven Repository</name>
+					<url>http://mvnrepository/artifacts/</url>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+						<checksumPolicy>warn</checksumPolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+						<checksumPolicy>warn</checksumPolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>mvn-repository</id>
+					<name>Maven Plugin Repository</name>
+					<url>http://mvnrepository.com/maven3</url>
+					<layout>default</layout>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<releases>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
 </settings>

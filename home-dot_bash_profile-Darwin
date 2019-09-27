@@ -105,3 +105,8 @@ export MAVEN_OPTS_HUGE="-Xmx4096m -XX:MaxPermSize=1g ${MAVEN_OPTS_BASE}"
 export MAVEN_OPTS="${MAVEN_OPTS_NORMAL}"
 #[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
 
+#
+# Program "lesspipe.sh".
+#
+export LESSOPEN='| /opt/local/bin/lesspipe.sh %s'
+

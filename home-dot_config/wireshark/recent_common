@@ -1,13 +1,10 @@
-# Recent settings file for Wireshark 3.0.2.
+# Recent settings file for Wireshark 3.0.4.
 #
 # This file is regenerated each time Wireshark is quit.
 # So be careful, if you want to make manual changes here.
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
 
-recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323004140.pcap
-recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323004527.pcap
-recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323010354.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323013757.pcap
 recent.capture_file: /Users/chadwickboggs/tmp/hacker-port8000-20190323025214.pcap
 recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8000-20190323025445.pcap
@@ -15,12 +12,16 @@ recent.capture_file: /Users/chadwickboggs/Documents/arris/hackathon/hacker-port8
 recent.capture_file: /Users/chadwickboggs/Documents/arris/tcpdump_captures/contentingest-attivio--port17000-20190404183048.pcap
 recent.capture_file: /Users/chadwickboggs/ticket/2019/201905/MNPA-624/RED_getSeriesCatalog_TF1.pcap
 recent.capture_file: /Users/chadwickboggs/ticket/2019/201905/MNPA-624/MaqHA_SNE06.pcap
+recent.capture_file: /Users/chadwickboggs/ticket/2019/201907/MNPA-682/getSeriesSeasonsSNE2.pcap
+recent.capture_file: /Users/chadwickboggs/Library/CloudStorage/iCloud Drive/Documents/ticket/2019/201907/MNPA-682/getSeriesSeasonsSNE2.pcap
+recent.capture_file: /Users/chadwickboggs/ticket/2019/201909/MNPA-738/getSeriesSeasons.pcap
 
 ######## Recent capture filters (latest last), cannot be altered through command line ########
 
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: http.response.code == 200
 recent.display_filter: http.response.code == 500
 recent.display_filter: http.request.uri contains "index"
 recent.display_filter: http.request.full_uri contains "10.10.96.137"
@@ -29,11 +30,12 @@ recent.display_filter: http.request.uri.path contains "connect"
 recent.display_filter: connect
 recent.display_filter: HTTP
 recent.display_filter: 500
+recent.display_filter: h
 
 # Main window geometry.
 # Decimal numbers.
 gui.geometry_main_x: 0
-gui.geometry_main_y: 23
+gui.geometry_main_y: 24
 gui.geometry_main_width: 1680
 gui.geometry_main_height: 1005
 
