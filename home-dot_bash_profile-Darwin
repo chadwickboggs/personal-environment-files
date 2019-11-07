@@ -6,8 +6,8 @@ export SVN_EDITOR="/opt/local/bin/vim"
 
 #export VLC_PLUGIN_PATH=/opt/local/lib/vlc/plugins
 
-#export JAVA_HOME="$(/usr/libexec/java_home --version 1.8)"
-export JAVA_HOME="/usr/java/latest"
+#export JAVA_HOME=(/usr/libexec/java_home --version 1.8)
+export JAVA_HOME="/opt/app/java/latest"
 export PATH="${JAVA_HOME}/bin:${PATH}"
 
 #export JAVA_OPTS="-XX:+UseCodeCacheFlushing -XX:+UseCompressedOops -XX:-ReduceInitialCardMarks ${JAVA_OPTS}"
@@ -85,6 +85,16 @@ HDF5_USE_FILE_LOCKING="FALSE"
 # Docker
 #
 export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
+#
+# Firefox
+#
+export PATH="/Applications/FirefoxBeta.app/Contents/MacOS:${PATH}"
+
+#
+# Safari
+#
+export PATH="/Applications/Safari.app/Contents/MacOS:${PATH}"
 
 #
 # Maven
