@@ -120,3 +120,8 @@ export MAVEN_OPTS="${MAVEN_OPTS_NORMAL}"
 #
 export LESSOPEN='| /opt/local/bin/lesspipe.sh %s'
 
+#
+# Run Fortune (for fun)
+#
+[[ -f "/opt/local/bin/fortune" ]] && echo && /opt/local/bin/fortune && echo
+
