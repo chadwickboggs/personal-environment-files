@@ -51,7 +51,7 @@ alias tbl='tail -F $(ls build_20*.log|last_line) 2> /dev/null'
 alias cbl='cat $(ls build_20*.log|last_line) 2> /dev/null'
 alias gvml='gview $(ls mvn_dependency_tree_20*.txt|last_line) 2> /dev/null'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
-alias lighty='sudo lighttpd'
+alias lighty='lighttpd'
 alias simple_http_server='python -m SimpleHTTPServer 8000'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors --enable-quic --quic-version=h3-23 2> /dev/null'
 
