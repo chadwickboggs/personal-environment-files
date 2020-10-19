@@ -11,6 +11,8 @@ alias gview='mview'
 
 alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
 
+alias domainname='gdnsdomainname'
+
 set -x PATH '/Applications/Docker.app/Contents/Resources/bin' $PATH
 
 set -xp PATH '/opt/local/libexec/gnubin'

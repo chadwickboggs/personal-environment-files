@@ -53,10 +53,12 @@ export JULIA_HOME="/Applications/Julia-1.0.app/Contents/Resources/julia"
 export PATH="${JULIA_HOME}/bin:${PATH}"
 
 #
-# Cargo
+# Cargo Static Website Generator
 #
-export CARGO_HOME="${HOME}/.cargo"
-export PATH="${CARGO_HOME}/bin:${PATH}"
+if [[ -d "${HOME}/.cargo" ]]; then
+	export CARGO_HOME="${HOME}/.cargo"
+	export PATH="${CARGO_HOME}/bin:${PATH}"
+fi
 
 #
 # Ruby

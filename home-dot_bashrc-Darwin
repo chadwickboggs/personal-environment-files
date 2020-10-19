@@ -15,4 +15,5 @@ alias vi='vim'
 alias gvi='mvim 2> /dev/null'
 alias gvim='mvim 2> /dev/null'
 alias gview='mview 2> /dev/null'
+alias domainname='gdnsdomainname'
 
