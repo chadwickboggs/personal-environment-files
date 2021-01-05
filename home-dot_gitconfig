@@ -1,6 +1,6 @@
 [user]
-	name = Chadwick Boggs
-	email = chadwick.boggs@arris.com
+	name = Tiffany Timbric
+	email = tiffanytimbric@gmail.com
 
 [core]
 	longpaths = true
@@ -15,7 +15,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"

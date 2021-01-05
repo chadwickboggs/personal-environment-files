@@ -110,7 +110,8 @@ end
 #	source ~/.iterm2_shell_integration.fish
 #end
 
-eval (direnv hook fish)
+#eval (direnv hook fish)
+direnv hook fish | eval
 
 #
 # Hide the "[I]" "vi edit mode" indicator: https://github.com/fish-shell/fish-shell/issues/3201
