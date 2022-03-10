@@ -9,6 +9,7 @@ set background=light
 set mouse=a
 set hlsearch
 set number
+"set relativenumber
 set tabstop=4
 set shiftwidth=4
 set wrapscan
@@ -16,6 +17,18 @@ set ignorecase
 set autoindent
 set vb
 set guifont=FiraCode-Regular:h13
+
+" 
+" Mark end-of-line and tab characters.
+"
+"set list
+
+" 
+" User system clipboard:
+"
+set clipboard=unnamed
+"set clipboard=unnamedplus
+
 highlight Statement ctermfg=0 guifg=LightGray
 highlight Normal ctermfg=DarkBlue
 if exists("loaded_nerd_tree")

@@ -74,7 +74,9 @@ alias gvml='gview (ls mvn_dependency_tree_20*.txt|last_line) 2> /dev/null'
 alias cqlsh='/usr/bin/python $CASSANDRA_HOME/bin/cqlsh.py'
 alias lighty='sudo lighttpd -f /opt/local/etc/lighttpd/lighttpd.conf'
 alias simple_http_server='python -m SimpleHTTPServer 8000'
-alias chrome="'/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome' --ignore-certificate-errors --enable-quic --quic-version=h3-23 2> /dev/null"
+#alias chrome="'/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome' --ignore-certificate-errors --enable-quic --quic-version=h3-23 2> /dev/null"
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias chrome_beta='/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome\ Beta'
 
 #alias mvni='mvn -Dmaven.wagon.http.ssl.insecure=true -e'
 #alias mvnui='mvn -Dmaven.wagon.http.ssl.insecure=true -e -U'
@@ -110,8 +112,8 @@ end
 #	source ~/.iterm2_shell_integration.fish
 #end
 
-#eval (direnv hook fish)
-direnv hook fish | eval
+eval (direnv hook fish)
+#direnv hook fish | eval
 
 #
 # Hide the "[I]" "vi edit mode" indicator: https://github.com/fish-shell/fish-shell/issues/3201

@@ -8,6 +8,10 @@ alias jh12='export JAVA_HOME="$(/usr/libexec/java_home --version 12)"; export PA
 alias jh13='export JAVA_HOME="$(/usr/libexec/java_home --version 13)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 alias jh14='export JAVA_HOME="$(/usr/libexec/java_home --version 14)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 alias jh15='export JAVA_HOME="$(/usr/libexec/java_home --version 15)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh16='export JAVA_HOME="$(/usr/libexec/java_home --version 16)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh17='export JAVA_HOME="$(/usr/libexec/java_home --version 17)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh18='export JAVA_HOME="$(/usr/libexec/java_home --version 18)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
+alias jh19='export JAVA_HOME="$(/usr/libexec/java_home --version 19)"; export PATH="${JAVA_HOME}/bin:${PATH}"; java -version'
 
 alias sshfss='/usr/local/bin/sshfs -C -o workaround=all -o reconnect'
 

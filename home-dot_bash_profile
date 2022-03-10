@@ -47,7 +47,7 @@ export HISTORYCONTROL=ignorespace
 export HISTFILESIZE=1000000
 export HISTSIZE=100000
 
-bind "set completion-ignore-case on"
+bind 'set completion-ignore-case on'
 #bind "set show-all-if-ambiguous on"
 
 #export BROTLI_HOME="/opt/workspace/third_party/brotli"
@@ -220,4 +220,9 @@ env_specific_filename="${HOME}/.bash_profile-$(uname)"
 # MacPorts Installer addition on 2018-10-03_at_16:56:06: adding an appropriate MANPATH variable for use with MacPorts.
 export MANPATH="/opt/local/share/man:$MANPATH"
 # Finished adapting your MANPATH environment variable for use with MacPorts.
+
+
+# MacPorts Installer addition on 2021-03-09_at_13:00:52: adding an appropriate DISPLAY variable for use with MacPorts.
+export DISPLAY=:0
+# Finished adapting your DISPLAY environment variable for use with MacPorts.
 
