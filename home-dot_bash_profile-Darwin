@@ -99,6 +99,11 @@ export PATH="/Applications/FirefoxBeta.app/Contents/MacOS:${PATH}"
 export PATH="/Applications/Safari.app/Contents/MacOS:${PATH}"
 
 #
+# Crypto
+#
+export PATH="/opt/workspace/personal/crypto/cli/bin:${PATH}"
+
+#
 # Maven
 #
 
