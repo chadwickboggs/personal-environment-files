@@ -41,11 +41,11 @@ alias lc='lessc'
 #alias llc='ls -altrh --color'
 #alias ll='ls -altrh --color=auto'
 #alias ll='ls -altrh'
-alias ll='exa -al'
+alias ll='eza -al'
 #alias locate='/usr/bin/locate'
 #alias lsc='ls --color'
 #alias ls='ls --color=auto'
-alias ls='exa'
+alias ls='eza'
 #alias parallel='/sw/bin/parallel'
 #alias pglog="tail -f /opt/local/var/log/postgresql93/postgres.log"
 #alias pgstart="sudo su postgres \-c '/opt/local/lib/postgresql93/bin/pg_ctl \-D /opt/local/var/db/postgresql93/defaultdb \-l /opt/local/var/log/postgresql93/postgres.log start'"
