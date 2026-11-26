@@ -61,6 +61,12 @@ if [[ -d "${HOME}/.cargo" ]]; then
 fi
 
 #
+# Apache Cassandra Database
+#
+#export CASSANDRA_HOME='/opt/app/apache/cassandra/latest'
+#export PATH="${CASSANDRA_HOME}/bin:${PATH}"
+
+#
 # Ruby
 #
 #[[ -s "/Users/chad/.rvm/scripts/rvm" ]] && source "/Users/chad/.rvm/scripts/rvm"  # This loads RVM into a shell session.
@@ -123,6 +129,11 @@ export MAVEN_OPTS="${MAVEN_OPTS_NORMAL}"
 #[[ $($HOME/bin/java_major_version.sh) < 8 ]] && export MAVEN_OPTS="-XX:MaxPermSize=512m ${MAVEN_OPTS}"
 
 #
+# Python
+#
+export PATH="${HOME}/Library/Python/3.9/bin:${HOME}/Library/Python/3.8/bin::${PATH}"
+
+#
 # Program "lesspipe.sh".
 #
 export LESSOPEN='| /opt/local/bin/lesspipe.sh %s'
@@ -132,3 +143,7 @@ export LESSOPEN='| /opt/local/bin/lesspipe.sh %s'
 #
 [[ -f "/opt/local/bin/fortune" ]] && echo && /opt/local/bin/fortune && echo
 
+
+eval "$(/usr/local/bin/brew shellenv)"
+export PATH="/usr/local/opt/mariadb@10.11/bin:$PATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"

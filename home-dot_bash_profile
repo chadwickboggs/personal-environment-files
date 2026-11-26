@@ -226,3 +226,10 @@ export MANPATH="/opt/local/share/man:$MANPATH"
 export DISPLAY=:0
 # Finished adapting your DISPLAY environment variable for use with MacPorts.
 
+[[ -s "/usr/local/bin/nvimpager" ]] && export PAGER=nvimpager
+
+#
+# Source Bahamas YSAP's numerical analysis Bash functions.
+#
+source "/opt/workspace/bahamas/bash-analysis/analysis.bash"
+

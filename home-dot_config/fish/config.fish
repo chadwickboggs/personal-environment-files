@@ -122,3 +122,6 @@ eval (direnv hook fish)
 #
 function fish_mode_prompt
 end
+
+set -x PAGER nvimpager
+

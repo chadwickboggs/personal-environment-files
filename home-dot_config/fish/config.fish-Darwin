@@ -2,7 +2,10 @@ alias jh6='set -x JAVA_HOME (/usr/libexec/java_home --version 1.6); and set -x P
 alias jh7='set -x JAVA_HOME (/usr/libexec/java_home --version 1.7); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
 alias jh8='set -x JAVA_HOME (/usr/libexec/java_home --version 1.8); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
 alias jh11='set -x JAVA_HOME (/usr/libexec/java_home --version 11); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
-alias jh12='set -x JAVA_HOME (/usr/libexec/java_home --version 12); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
+alias jh17='set -x JAVA_HOME (/usr/libexec/java_home --version 17); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
+alias jh21='set -x JAVA_HOME (/usr/libexec/java_home --version 21); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
+alias jh22='set -x JAVA_HOME (/usr/libexec/java_home --version 22); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
+alias jh23='set -x JAVA_HOME (/usr/libexec/java_home --version 23); and set -x PATH $JAVA_HOME/bin $PATH; and java -version'
 
 alias vi='vim'
 alias gvi='mvim'
