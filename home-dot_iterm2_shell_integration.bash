@@ -221,8 +221,8 @@ __bp_preexec_invoke_exec() {
         return
     fi
 
-    # If none of the previous checks have returned out of this function, then
-    # the command is in fact interactive and we should invoke the user's
+    # If none of the previous checks have returned out of this function then
+    # the command is interactive meaning we should invoke the user's
     # preexec functions.
 
     # For every function defined in our function array. Invoke it.
@@ -239,11 +239,11 @@ __bp_preexec_invoke_exec() {
         fi
     done
 
-    # Restore the last argument of the last executed command
-    # Also preserves the return value of the last function executed in preexec
+    # Restore the last argument of the last executed command.
+    # Also, preserves the return value of the last function executed in preexec.
     # If `extdebug` is enabled a non-zero return value from the last function
-    # in prexec causes the command not to execute
-    # Run `shopt -s extdebug` to enable
+    # in prexec causes the command not to execute.
+    # Run `shopt -s extdebug` to debug.
     __bp_set_ret_value "$preexec_ret_value" "$__bp_last_argument_prev_command"
 }
 
@@ -337,7 +337,7 @@ __bp_install_after_session_init() {
     PROMPT_COMMAND="${existing_prompt_command} $__bp_trap_install_string __bp_install;"
 }
 
-# Run our install so long as we're not delaying it.
+# Run our installation so long as we're not delaying it.
 if [[ -z "$__bp_delay_install" ]]; then
     __bp_install_after_session_init
 fi;
@@ -376,7 +376,7 @@ function iterm2_print_state_data() {
 # Usage: iterm2_set_user_var key value
 function iterm2_set_user_var() {
   iterm2_begin_osc
-  printf "1337;SetUserVar=%s=%s" "$1" $(printf "%s" "$2" | base64 | tr -d '\n')
+  printf "1337;SetUserVar=%s=%s" "$1" "$(printf "%s" "$2" | base64 | tr -d '\n')"
   iterm2_end_osc
 }
 
